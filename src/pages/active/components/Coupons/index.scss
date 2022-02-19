@@ -1,0 +1,245 @@
+.bwCoupons {
+  $color: #882a00;
+  width: 100%;
+  padding-top: 24px;
+  @mixin singleOmit {
+    // width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-one {
+    display: flex;
+    width: 702px;
+    height: 160px;
+    background-image: url("https://tsla.bowuyoudao.com/weapp/img/coupons_one.png");
+    background-size: 702px 160px;
+
+
+    &-price {
+      width: 190px;
+      height: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      // align-items: center;
+      margin-top: 50px;
+
+      color: $color;
+      &-sys {
+        font-size: 32px;
+        line-height: 1;
+      }
+      &-money {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 1;
+      }
+    }
+    &-desc {
+      margin-left: 24px;
+      width: 280px;
+
+      &-title {
+        color: $color;
+        font-size: 32x;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 36px;
+        width: 280px;
+        @include singleOmit;
+      }
+      &-subtit {
+        color: $color;
+        margin-top: 16px;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1;
+        width: 280px;
+        @include singleOmit;
+      }
+    }
+    &-use {
+      margin-left: auto;
+      margin-right: 32px;
+      &-btn {
+        margin-top: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 144px;
+        height: 56px;
+        border-radius: 8px;
+        background-color: #d04418;
+        font-size: 26px;
+        text-align: center;
+        color: #fff;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  &-two {
+    width: 702px;
+    //  height: 194px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    &-item {
+      width: 343px;
+      height: 194px;
+      margin-top: 24px;
+      //  background-color: skyblue;
+      border-radius: 8px;
+      background-image: url("https://tsla.bowuyoudao.com/weapp/img/coupons_two.png");
+      background-size: 343px 194px;
+      &-t {
+        height: 118px;
+        display: flex;
+        &-left {
+          width: 147px;
+          height: 118px;
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          color: $color;
+          margin-top: 32px;
+
+          &-sys {
+            font-size: 24px;
+            line-height: 1;
+          }
+          &-money {
+            font-weight: 500;
+            font-size: 54px;
+            line-height: 1;
+          }
+        }
+        &-right {
+          width: 196px;
+
+          &-title {
+            width: 196px;
+            //  height: 118px;
+            color: $color;
+            font-size: 26px;
+            font-weight: 500;
+            line-height: 1;
+            margin-top: 22px;
+
+            @include singleOmit;
+          }
+          &-desc {
+            color: $color;
+            margin-top: 12px;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1;
+            width: 196px;
+            @include singleOmit;
+          }
+        }
+      }
+      &-b {
+        &-btn {
+          margin-top: 16px;
+          margin-left: 32px;
+          width: 279px;
+          height: 44px;
+          border-radius: 8px;
+          font-size: 26px;
+          line-height: 44px;
+          color: #fff;
+          text-align: center;
+          background-color: #D04418;
+          &:active{
+            opacity: .5;
+          }
+        }
+
+      }
+    }
+  }
+  &-three{
+    width: 702px;
+    //  height: 224px;
+    display: flex;
+    // justify-content: space-between;
+    flex-flow: row wrap;
+    :nth-child(3n+3){
+      // margin-left: 26px;
+      margin-right: 0;
+    }
+   
+    &-item{
+      width: 224px;
+      height: 234px;
+      margin-top: 24px;
+      border-radius: 8px;
+     margin-right: 15px;
+      background-image: url("https://tsla.bowuyoudao.com/weapp/img/coupons_three.png");
+      background-size: 224px 234px;
+      &-t{
+        height: 165px;
+        &-price{
+          width: 224px;
+          // height: 234px;
+          display: flex;
+          justify-content: center;
+          align-items: baseline;
+          color: $color;
+          padding-top: 24px;
+          // margin-top: 24px;
+          &-sys{
+            font-size: 24px;
+            line-height: 1;
+          }
+          &-money{
+            font-size: 54px;
+            line-height: 1;
+          }
+        }
+        &-title{
+          width: 224px;
+          text-align: center;
+          color: $color;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 1;
+          margin-top: 12px;
+          @include singleOmit;
+        }
+        &-subtit{
+          color: $color;
+          margin-top: 12px;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 1;
+          width: 224px;
+          text-align: center;
+          @include singleOmit;
+        }
+
+      }
+      &-b{
+        &-btn{
+          width: 176px;
+          height: 44px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #D04418;
+          border-radius: 8px;
+          color: #fff;
+          font-size: 24px;
+          margin-left: 24px;
+          margin-top: 12px;
+          &:active{
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}

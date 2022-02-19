@@ -1,0 +1,145 @@
+.bw-liveListItem {
+  margin-top: 24px;
+  width: 702px;
+  height: 360px;
+  // background: skyblue;
+  border-radius: 16px;
+  overflow: hidden;
+  .line {
+    display: inline-block;
+
+    width: 4px;
+    border-radius: 1px;
+    background-color: $white;
+    margin-right: 2px;
+    height: 34px;
+    margin-left: 2px;
+  }
+
+  .line1 {
+    // alternate意为应该轮流反向播放动画
+    animation: line 0.6s infinite ease-in-out alternate;
+  }
+
+  .line2 {
+    animation: line 0.6s 0.2s infinite ease-in-out alternate;
+  }
+
+  .line3 {
+    animation: line 0.6s 0.4s infinite ease-in-out alternate;
+  }
+  .LiveIcon-icon-yuzhan{
+    top: 24px;
+    left: 24px;
+  }
+  .LiveIcon-icon{
+    top: 24px;
+    left: 24px;
+  }
+  &-box {
+    // width: 702px;
+    // height: 360px;
+    &-img {
+      position: relative;
+      width: 702px;
+      height: 360px;
+      border-radius: 16px;
+
+      &-mask {
+        position: absolute;
+        bottom: 0;
+        width: 702px;
+        height: 163px;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.6) 100%
+        );
+      }
+      &-liveing {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 1;
+        background: #aa1612;
+        padding: 0 6px;
+        border-radius: 4px;
+        color: #ffffff;
+        line-height: 34px;
+        height: 34px;
+        font-size: 20px;
+        box-sizing: border-box;
+      }
+      &-seeNum {
+        box-sizing: border-box;
+        font-size: 20px;
+        position: absolute;
+        top: 24px;
+        left: 124px;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 0 6px;
+        height: 34px;
+        border-radius: 4px;
+        color: #ffffff;
+        line-height: 34px;
+      }
+      &-liveInfo {
+        box-sizing: border-box;
+        padding: 0 24px;
+        position: absolute;
+        bottom: -63px;
+        width: 702px;
+        height: 163px;
+        z-index: 333;
+        display: flex;
+        // margin-top: 63px;
+        &-avatar {
+          width: 72px;
+          height: 72px;
+
+          &-img {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+          }
+        }
+        &-title {
+          width: 500px;
+          // height: 72px;
+          margin-left: 16px;
+
+          z-index: 112;
+
+          &-tit {
+            color: #fff;
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-size: 28px;
+            margin-top: -5px;
+          }
+          &-desc {
+            color: #fff;
+            font-size: 24px;
+            // margin-top: 5px;
+            width: 500px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  @keyframes line {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: 50%;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.PayPassword {
+  text-align: center;
+  padding-top: 32px;
+  &-1 {
+    font-size: $fz24;
+    &-header {
+
+      &-num {
+        margin-top: 24px;
+        color: $fontColor;
+      }
+      &-money {
+        font-size: 40px;
+      }
+    }
+
+    &-passwords {
+      font-size: 0;
+      margin: 48px 32px;
+      border: 1px solid #E5E5E5;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      
+      &-item {
+        display: inline-block;
+        height: 100%;
+        flex: 1;
+        height: 96px;
+        border-right: 1px solid #E5E5E5;
+        position: relative;
+        &:last-child {
+          border-right: none;
+        }
+
+        &__active::after {
+          content: ' ';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 16px;
+          height: 16px;
+          background-color: $fontColor;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &-2 {
+    background-color: $colorEEE;
+    padding: 24px 16px;
+    display: flex;
+    height: 472px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &-item {
+      flex: 0 0 30%;
+      height: 96px;
+      line-height: 96px;
+      // margin-right: 16px;
+      background-color: #fff;
+      color: $fontColor;
+      border-radius: 8px;
+      font-size: 50px;
+
+      &:active {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      
+      &-11 {
+        opacity: 0;
+      }
+      &-10 {
+        background: none;
+      }
+    }
+  }
+}

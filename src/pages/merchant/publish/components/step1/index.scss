@@ -1,0 +1,85 @@
+.publish-good-page {
+  padding: 24px;
+  .bw-input-native {
+    width: 100%;
+  }
+
+  // .input-good-name {
+  //   text-align: right;
+  // }
+
+  .weui-input {
+    text-align: right;
+    border: none;
+    // background-color: red;
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .h5-input {
+    text-align: right;
+  }
+
+  .ListItem-child-right {
+    flex: 1;
+    // background-color: blue;
+    justify-content: flex-end;
+    // align-items: flex-end;
+    // display: flex;
+  }
+  .PublishFirst {
+
+    margin-bottom: 200px;
+
+    .step-1 {
+      margin-bottom: 24px;
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: $white;
+
+      .at-input {
+        max-width: 360px;
+      }
+
+    }
+  
+    .step-2 {
+      background-color: $white;
+      padding: 24px;
+  
+      .detail-textarea {
+        border: none;
+      }
+
+      .taro-textarea {
+        // font-size: 28px;
+        color: $tabColor;
+        &::-webkit-input-placeholder {
+          // font-size: 28px;
+        }
+      }
+  
+      .desc {
+        color: $tabColor;
+        font-size: $fz24;
+        .tixing {
+          width: 24px;
+          height: 24px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .footer {
+      box-sizing: border-box;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px;
+    }
+
+  }
+  
+}

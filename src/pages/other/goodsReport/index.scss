@@ -1,0 +1,81 @@
+.Report {
+  background: #f7f7f7;
+
+  &-product {
+    background: $white;
+    padding: 24px 32px;
+
+    &-img {
+      width: 120px;
+      height: 120px;
+      display: inline-block;
+    }
+
+    &-info {
+      font-size: 28px;
+      color: #666666;
+      line-height: 40px;
+      vertical-align: top;
+      margin-left: 24px;
+      display: inline-block;
+      width: 500px;
+    }
+  }
+
+  &-item {
+    margin: 0 24px;
+    margin-top: 24px;
+    height: 109px;
+    border: none;
+  }
+
+  .ml16 {
+    margin: 16px;
+    margin-left: 24px;
+  }
+
+  &-title {
+    font-size: 32px;
+    color: #333333;
+    line-height: 45px;
+
+    &-red {
+      font-size: 32px;
+      color: #AA1612;
+      margin-left: 4px;
+    }
+  }
+
+  &-content {
+    margin: 0 24px;
+    margin-top: 24px;
+    background: $white;
+    overflow: hidden;
+    padding-bottom: 24px;
+
+    &-textarea {
+      margin: 0 24px;
+      color: #000;
+      max-height: 120px;
+      line-height: 50px;
+    }
+
+    &-upload {
+      margin-left: 16px;
+    }
+  }
+
+  &-btn {
+    width: 702px;
+    height: 98px;
+    background: #AA1612;
+    border-radius: 8px;
+    position: fixed;
+    left: 24px;
+    bottom: 24px;
+    font-size: 36px;
+    line-height: 98px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}

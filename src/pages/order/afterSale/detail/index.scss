@@ -1,0 +1,113 @@
+.afterSaleDetailPage {
+  font-size: fz28;
+  color: #666666;
+  margin-bottom: 200px;
+  &-status {
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  &-lines {
+    background-color: $white;
+    margin-bottom: 24px;
+    &-item {
+      padding: 32px;
+      border-bottom: 1px solid #eee;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+
+      &-img {
+        width: 144px;
+        height: 144px;
+        border-radius: 4px;
+        display: inline-block;
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &-product {
+    padding: 24px 32px;
+    background-color: $white;
+    margin-bottom: 24px;
+
+    &-content {
+      display: flex;
+      margin-bottom: 24px;
+      &-icon {
+        flex: 0 0 180px;
+        height: 180px;
+        margin-right: 16px;
+        border-radius: 8px;
+      }
+
+      &-texts {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-name {
+          @include line-clamp(2);
+        }
+
+        
+      }
+    }
+
+    &-footer {
+      border-top: 1px solid #eee;
+      padding-top: 24px;
+
+      text-align: right;
+    }
+  }
+
+  &-order {
+    background-color: $white;
+
+    &-footer {
+      text-align: center;
+      border-top: 1px solid #eee;
+    }
+
+  }
+
+  &-histories {
+    background-color: $white;
+
+  }
+
+  &-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: $white;
+    display: flex;
+    // text-align: right;
+    justify-content: flex-end;
+    padding: 0 32px;
+  }
+
+  &-btn-wrap {
+    display: inline-block;
+    margin-right: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  .reason-box {
+    .at-textarea, .taro-textarea {
+      background-color: #F7F7F7;
+      border: 0px;
+    }
+  }
+}

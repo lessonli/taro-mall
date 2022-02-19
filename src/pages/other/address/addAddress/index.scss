@@ -1,0 +1,25 @@
+.addAddress {
+  padding: 24px;
+
+  .at-form {
+    background: $gray;
+  }
+
+  .at-input {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 32px;
+    color: #BDBDBD;
+  }
+
+  &-btn {
+    margin-top: 24px;
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 702px;
+  }
+}

@@ -1,0 +1,44 @@
+.bw-userDebug {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  &-img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+
+    &-ele {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+    }
+  }
+  &-token {
+    font-size: 26px;
+    
+  }
+}
+
+.bw-userDebug-list{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.bw-userDebug-title{
+  color: #333;
+  
+}
+.bw-userDebug-title-tip{
+  margin-top: 24px;
+  font-size: 32px;
+  color: #666;
+  font-weight: 500;
+}
+
+
+.bw-debug-img{
+  width: 300px;
+  height: 400px;
+}

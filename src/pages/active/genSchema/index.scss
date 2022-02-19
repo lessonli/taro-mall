@@ -1,0 +1,33 @@
+
+.bw-genSchema{
+  padding: 0 24px;
+  margin-top: 24px;
+  
+  .at-input__input{
+    text-align: left;
+    width: 80%;
+  }
+  .at-input__input{
+    ::placeholder{
+      color: rgba($color: #000, $alpha: .3);
+    }
+  }
+  .weui-input{
+    width: 400px;
+  }
+  .bw-list-item{
+    border-bottom: none;
+  }
+  .bw-genSchema-content{
+    font-size: 24px;
+    color: #333;
+  
+  }
+  .bw-genSchema-fullPath{
+      width: 467px;
+      word-wrap: break-word;
+      word-break: normal;
+    // white-space: pre-line;
+    // white-space: pre-line;
+  }
+}

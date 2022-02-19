@@ -1,0 +1,118 @@
+.resultScroll {
+  height: 100vh;
+
+  .Bw-Modal-box{
+    width: 602px;
+    // height: 484px;
+    .Bw-Modal-box-content{
+      .resultScroll-img{
+        width: 240px;
+        height: 160px;
+      }
+    }
+  }
+
+}
+
+.PayResult {
+
+  padding: 24px 0;
+
+  &-header {
+    width: 702px;
+    margin-left: 24px;
+    height: 414px;
+    background: $white;
+    border-radius: 8px;
+    margin: auto;
+    box-sizing: border-box;
+
+    &-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 278px;
+
+      &-result {
+        font-size: 36px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 50px;
+        display: flex;
+        align-items: center;
+
+        &-success {
+          font-size: 50px;
+          color: #1DAD1A;
+          margin-right: 22px;
+        }
+
+      }
+
+      &-price {
+        font-size: 32px;
+        font-weight: bold;
+        color: #333333;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 33px;
+
+        .big {
+          font-size: 60px;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+
+      &-order {
+        width: 315px;
+        height: 80px;
+        border-radius: 8px;
+        border: 1px solid #BDBDBD;
+        font-size: 32px;
+        line-height: 80px;
+        color: #333333;
+        display: inline-block;
+        text-align: center;
+      }
+
+      &-back {
+        width: 315px;
+        height: 80px;
+        border-radius: 8px;
+        border: 1px solid rgba(170, 22, 18, 0.5);
+        font-size: 32px;
+        line-height: 80px;
+        color: $checked;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+
+  &-attention {
+    width: 702px;
+    height: 148px;
+    display: block;
+    margin: auto;
+    margin-top: 24px;
+  }
+
+  &-commodity {
+    margin-top: 8px;
+
+    &-title {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 45px;
+      padding: 0 24px;
+      margin: 24px 0;
+    }
+  }
+}

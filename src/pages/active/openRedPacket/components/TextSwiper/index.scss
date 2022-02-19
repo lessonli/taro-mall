@@ -1,0 +1,32 @@
+
+.textSwiper-box{
+  margin-top: 20px;
+  height: 80px;
+  &-item{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #943C18;
+      font-size: 28px;
+      &-img{
+        width: 48px;
+        height: 48px;
+        margin-left: 8px;
+        border-radius: 50%;
+      }
+      &-text{
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+      }
+    }
+  }
+}

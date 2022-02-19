@@ -1,0 +1,152 @@
+.storeInfo {
+  background: $gray;
+
+
+
+  &-empty {
+    height: calc(100vh - 310px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  &-scrollview {
+    height: 100vh;
+  }
+
+  &-tab {
+    height: 88px;
+    margin-top: 24px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 32px;
+
+    &-mr {
+      margin-right: 72px;
+    }
+  }
+
+  &-info {
+    background: $white;
+    overflow: hidden;
+
+    &-item {
+      margin: 0 32px;
+      border-bottom: 1px solid #eeeeee;
+
+      &-title {
+        font-size: $fz32;
+        margin-top: 32px;
+        line-height: 45px;
+        font-weight: 500;
+        color: #333333;
+      }
+
+      &-des {
+        color: $color999;
+        margin-top: 12px;
+        margin-bottom: 24px;
+        font-size: $fz32;
+
+        &-600 {
+          color: #333333;
+        }
+      }
+    }
+  }
+
+  &-evaluate {
+    padding-top: 32px;
+    background: $white;
+
+    &-header {
+      display: flex;
+      padding: 0 32px;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      line-height: 50px;
+
+      &-title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #333333;
+        display: inline-block;
+      }
+
+      &-source {
+        font-size: 36px;
+        font-weight: 600;
+        color: #AA1612;
+        margin-left: 16px;
+        display: inline-block;
+      }
+
+      &-percent {
+        font-size: 26px;
+        font-weight: 400;
+        color: #333333;
+        display: inline-block;
+      }
+
+      &-tips {
+        font-size: 26px;
+        font-weight: 400;
+        color: #999999;
+        margin-left: 10px;
+        display: inline-block;
+      }
+    }
+
+    &-labelTabs {
+      padding: 0 24px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #eee;
+      margin-top: 16px;
+
+      span {
+        background: #F7F7F7;
+        border-radius: 8px;
+        display: inline-block;
+        padding: 12px 16px;
+        font-size: 28px;
+        line-height: 28px;
+        color: #333333;
+        margin-right: 16px;
+
+      }
+
+      .active {
+        color: $checked;
+        background: rgba(170, 22, 18, 0.08);
+      }
+    }
+
+    &-content {
+
+      &-line {
+        width: 686px;
+        height: 1px;
+        background: #eee;
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+// .storeInfo-info {
+//   border-bottom: 1px solid #eeeeee;
+
+//   &-title {
+//     font-size: $fz32;
+//     margin-top: 24px;
+
+//   }
+
+//   &-des {
+//     color: $color999;
+//     margin-top: 12px;
+//     margin-bottom: 24px;
+//   }
+// }

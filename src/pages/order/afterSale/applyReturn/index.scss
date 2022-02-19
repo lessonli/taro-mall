@@ -1,0 +1,28 @@
+.applyReturnpage {
+  padding: 24px;
+
+  .at-input {
+    // background-color: red;
+    max-width: 300px;
+  }
+
+  .at-textarea {
+    border: none;
+  }
+
+  &-card {
+    margin-bottom: 24px;
+    background-color: $white;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .ListItem:last-child {
+      border-bottom: 0px;
+    }
+  }
+
+  &-footer {
+    // padding: ;
+
+  }
+}

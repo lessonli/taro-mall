@@ -1,0 +1,153 @@
+.homeScroview {
+  height: 100vh;
+  touch-action: pan-y;
+}
+
+.bw-home {
+  // background: $white;
+  padding-bottom: 120px;
+
+  &-header {
+    padding: 0 32px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $gray;
+
+    &-logo {
+      width: 122px;
+      height: 57px;
+      display: block;
+
+    }
+
+    &-searchBox {
+      height: 64px;
+      // width: 548px;
+      width: 534px;
+      border-radius: 8px;
+      background: $gray;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      background: #EDEDED;
+
+      i {
+        font-size: 32px;
+        color: #999;
+        margin-left: 26px;
+      }
+
+
+      &-text {
+        margin-left: 13px;
+        height: 40px;
+        font-size: 28px;
+        margin-left: 15px;
+        line-height: 40px;
+        color: #999999;
+      }
+    }
+  }
+
+  &-banner {
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    height: 280px;
+    margin-top: 16px;
+  }
+
+  &-tags {
+    display: flex;
+    align-items: center;
+    padding: 0 38px;
+    justify-content: space-between;
+    font-size: 24px;
+    height: 65px;
+    font-weight: 400;
+    color: #999999;
+    background: $gray;
+
+    i {
+      font-size: 24px;
+      margin-right: 6px;
+    }
+  }
+
+  &-activity {
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8px;
+
+    &-img {
+      width: 350px !important;
+      height: 170px;
+      margin-bottom: 1px;
+      display: inline-block;
+    }
+  }
+
+  &-commodity {
+    width: 100%;
+    margin-top: 24px;
+  }
+
+  // .bw-home-modal{
+  //   .at-curtain__container{
+  //     width: 502px;
+  //     .at-curtain__body{
+  //       width: 502px;
+  //     }
+  //   }
+  // }
+
+
+  &-modalCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      animation: zoomIn 1s ease;
+      animation-fill-mode: forwards;
+      width: 502px;
+      height: 730px;
+    }
+
+    &-imgHide {
+      animation: zoomOut 1s ease;
+      animation-fill-mode: forwards;
+      width: 502px;
+      height: 730px;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+}

@@ -1,0 +1,185 @@
+
+.teamManagement-wrapper{
+  width: 100%;
+  &-header{
+    height: 280px;
+    background: #2F303E;
+    //padding-top: 44px;
+    padding-left: 40px;
+  }
+}
+.teamManagement-invite{
+  &-code{
+    padding-top: 50px;
+    font-size: 36px;
+    color: #FFFFFF;
+    .teamManagement-invite-copy{
+      display: inline-block;
+      width: 62px;
+      height: 32px;
+      font-size: 22px;
+      line-height: 32px;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: 30px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+    }
+  }
+  &-tip{
+    margin-top: 16px;
+    font-size: 26px;
+    color: #FFFFFF;
+    opacity: .7;
+  }
+}
+
+.teamManagement-tabs-wrapper{
+  padding: 0 24px;
+  margin-top: -80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .teamManagement-tabs-item{
+    box-sizing: border-box;
+    padding-top: 15px;
+    border-radius: 8px 8px 0 0;
+    height: 146px;
+    width: 50%;
+    color: #999999;
+    background: #F7F7F7;
+    &-count{
+      font-size: 48px;
+      text-align:center ;
+    }
+    &-text{
+      text-align: center;
+      font-size: 26px;
+      color: #999999;
+    }
+  }
+  .teamManagement-tabs-item-active{
+    background: #FFFFFF;
+    color: #333333;
+    &-text{
+      color: #666666;
+    }
+  }
+}
+
+.teamManagement-invite-list{
+  height: 104px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  &-title{
+
+    display: flex;
+    height: 104px;
+    line-height: 104px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    color: #333333;
+    font-size: 28px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    &-sort{
+      position: relative;
+      font-size: 28px;
+      color: #999999;
+    }
+    &-sortType{
+      position: absolute;
+      z-index: 3;
+      top: 92px;
+      right: 16px;
+      width: 260px;
+      height: 184px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
+      &-item{
+        text-align: center;
+        color: #333333;
+        font-size: 28px;
+        line-height: 93px;
+        border-bottom: 1px solid #EEEEEE;
+      }
+      &-itemActive{
+        color: #AA1612;
+      }
+      &-trangle{
+        position: absolute;
+        background-color: transparent;
+        top: -8px;
+        right: 25px;
+        // background-color: #FFFFFF;
+        // width: 0;
+        // height: 0;
+        // border-style: solid;
+        // border-width: 0 32px 32px 32px;
+        // border-color: transparent transparent #ffffff transparent;
+        // // box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
+        // filter: drop-shadow(20px 20px none 20px  rgb(143, 0, 0));
+        
+        transform: scale(.5);
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #fff #fff;
+        transform: rotate(135deg);
+        // -webkit-box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+        // -moz-box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: -1px 1px 2px 0 rgba(112, 112, 112, 0.1);
+      }
+
+    }
+  }
+  &-item{
+    padding: 32px 24px 24px 24px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    &-content{
+      display: flex;
+      &-img{
+        width: 80px;
+        height: 80px;
+        margin-right: 16px;
+        &-imgEle{
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+      &-info{
+        &-name{
+          color: #333333;
+          font-size: 32px;
+          @include line-clamp(1);
+        }
+        &-date{
+          color: #999999;
+          font-size: 24px;
+        }
+      }
+    }
+    &-result{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      font-size: 24px;
+      &-item{
+        flex: 1;
+        text-align: center;
+        &-number{
+          color: #333333;
+        }
+      }
+    }
+  }
+
+}
+.teamManagement-invite-list-scrollview{
+  height: calc(100vh - 510px);
+}

@@ -1,0 +1,80 @@
+
+.hotSale{
+  width: 228px;
+  // height: 370px;
+  background-color: #fff;
+  border-radius: 8px;
+  // overflow: hidden;
+  &-img{
+    position: relative;
+    width: 228px;
+    height: 228px;
+   
+    &-ele{
+      width: 228px;
+      height: 228px;
+      border-radius: 8px;
+      &-top{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 36px;
+        height: 48px;
+        z-index: 10;
+      }
+    }
+  }
+  &-text{
+    position: relative;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    &-name{
+      font-size: 28px;
+      width: 100%;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top: 16px;
+    }
+    &-price{
+      font-size: 32px;
+      color: #AA1612;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    &-label{
+      position: absolute;
+      top: -36px;
+      left: 7px;
+      width: 196px;
+      height: 36px;
+      box-sizing: border-box;
+      // padding-bottom: 16px;
+      background-color: #FFE5E6;
+      border-radius: 18px 18px 18px 18px;
+      font-size: 24px;
+      text-align: center;
+      &-con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-img{
+          width: 24px;
+          height: 24px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -3px;
+         margin-right: 8px;
+        }
+        &-name{
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+.sendStamps {
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 98px;
+  box-sizing: border-box;
+  position: relative;
+
+  .input-placeholder {
+    color: #BDBDBD !important;
+  }
+
+  .placeholder {
+    color: #BDBDBD !important;
+  }
+
+  .bd {
+    color: #333333;
+  }
+
+  .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before {
+    color: $color-primary;
+    transform: scale(0.8);
+    vertical-align: middle;
+    animation: none !important;
+  }
+
+  radio[aria-checked="true"] {
+    visibility: hidden;
+    position: relative;
+    animation: none !important;
+  }
+
+  // .weui-input::-webkit-input-placeholder {
+  //   color: #BDBDBD !important;
+  // }
+
+  &-submit {
+    // position: absolute;
+    width: 686px;
+    height: 98px;
+    background: #AA1612;
+    border-radius: 8px;
+    margin: auto;
+    font-size: 36px;
+    text-align: center;
+    line-height: 98px;
+    color: #FFFFFF;
+    // left: 32px;
+    // bottom: 32px;
+  }
+
+  &-content {
+    width: 702px;
+    margin: auto;
+    background: #F7F7F7;
+
+    &-item {
+      border: none;
+      height: 109px;
+      margin-top: 24px;
+      font-size: 32px;
+      color: #333333;
+
+      &-inputBox {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      &-input {
+        font-size: 32px;
+        color: #BDBDBD;
+        text-align: right;
+        margin-right: 18px;
+      }
+
+      .ml18 {
+        margin-left: 18px;
+      }
+
+
+      &-time {
+        font-size: 32px;
+        color: #666666;
+      }
+
+      &-icon {
+        font-size: 32px;
+        color: #333333;
+      }
+    }
+
+    &-tips {
+      display: block;
+      font-size: 24px;
+      color: #999999;
+      text-align: center;
+      margin: 24px 0;
+    }
+  }
+
+
+
+  &-checkGroup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-label {
+      display: inline-flex;
+      align-items: center;
+      margin-left: 52px;
+    }
+
+    &-text {
+      font-size: 32px;
+      color: #666666;
+      margin-left: 16px;
+    }
+  }
+}

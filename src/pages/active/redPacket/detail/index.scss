@@ -1,0 +1,164 @@
+
+
+.redPacketDetail{
+  .ListItem{
+    height: 140px;
+  }
+  &-head{
+    position: relative;
+    width: 750px;
+    height: 480px;
+    background-image: url('https://tsla.bowuyoudao.com/weapp/img/shareRedPacketBg.png');
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    &-img{
+      position: absolute;
+      left: calc(50% - 51px);
+      top: 64px;
+      width: 102px;
+      height: 102px;
+      border-radius: 50%;
+      &-ele{
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+      }
+    }
+    &-tip{
+      width: 180px;
+      height: 40px;
+      text-align: center;
+      color: #D23824;
+      line-height: 40px;
+      background-image: url('https://tsla.bowuyoudao.com/weapp/img/red_tip.png');
+      background-size: 180px 40px;
+      position: absolute;
+      left: 50%;
+      margin-left: -90px;
+      font-size: 24px;
+    }
+    &-money{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 170px;
+      font-size: 72px;
+      font-weight: 500;
+      color: #FED786;
+    }
+    &-btn{
+      width: 480px;
+      height: 98px;
+      // margin-top: 20px;
+      background-image: url('https://tsla.bowuyoudao.com/weapp/img/redBtn.png');
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      border: none;
+    }
+    &-text{
+      margin-top: 10px;
+      font-size: 28px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: .7;
+    }
+  }
+  &-info{
+    padding: 0 20px;
+    height: 90px;
+    align-items: center;
+    margin-top: 24px;
+    font-size: 24px;
+    color: #999;
+    &-item{
+      line-height: 37px;
+      margin-top: 4px;
+    }
+  }
+  &-list{
+    padding: 0 24px;
+    .bw-list-item{
+      position: relative;
+    }
+    &-left{
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-user{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-right: 16px;
+      
+        &-img{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          
+        }
+      }
+      &-info{
+        width: 385px;
+        &-nickName{
+          width: 100%;
+          font-size: 32px;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: rgba(0, 0, 0, 0.85);
+          font-size: 28px;
+        }
+        &-time{
+          font-size: 24px;
+          color: #999999;
+        }
+      }
+    }
+    &-right{
+      &-money{
+        font-size: 32px;
+        font-weight: 600;
+        color: #333;
+        text-align: right;
+      }
+      &-text{
+        text-align: right;
+        color: #999;
+        font-size: 24px;
+      }
+    }
+  }
+  &-btnGroup{
+    .bw-go-home-btn{
+      &:nth-of-type(2){
+        bottom: 420px;
+      }
+    }
+  }
+  .CanvasPhoto-bottom{
+    .CanvasPhoto-bottom-operation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+}
+
+.redPacketDetail-scrollView{
+  height: calc(100vh - 570px);
+}
+.redPacketTag{
+  width: 126px;
+  height: 115px;
+  background: url('https://tsla.bowuyoudao.com/weapp/img/return_tag.png');
+  background-size: 126px 115px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

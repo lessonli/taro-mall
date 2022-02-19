@@ -1,0 +1,46 @@
+
+.cumulativeEarnings{
+  padding: 0 24px;
+  &-amount{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 48px;
+    align-items: center;
+    height: 173px;
+    background: linear-gradient(135deg, #F7EAD9 0%, #E9C6A8 100%);
+    border-radius: 8px;
+    &-item{
+      // flex: 1;
+      text-align: left;
+      &-income{
+        color: #723E15;
+        font-size: 26px;
+      }
+      &-num{
+        color:#723E15;
+        font-size: 40px;
+      }
+    }
+  }
+  .cumulativeEarnings-list{
+    margin-top: 32px;
+    &-item{
+      box-sizing: border-box;
+      height: 144px;
+      padding: 36px 0px;
+
+      &-text{
+        color: #333333;
+        font-size: 32px;
+        font-weight: 500;
+      }
+      &-tip{
+        color: #999999;
+        font-size: 24px;
+      }
+
+    }
+  }
+
+}

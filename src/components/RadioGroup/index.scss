@@ -1,0 +1,64 @@
+.bw-RadioGroup {
+  // display: flex;
+  // align-items: center;
+
+  .Radio {
+    display: inline-flex;
+    align-items: center;
+
+    &-label {
+      margin-left: 16px;
+      margin-right: 16px;
+      float: left;
+      line-height: 32px;
+    }
+
+    &-noCheck {
+      width: 32px;
+      height: 32px;
+      // border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      // border: 1px solid #bdbdbd;
+
+      i {
+        // color: #fff;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 35px;
+        display: block;
+        text-align: center;
+        line-height: 34px;
+        // z-index: 2;
+      }
+    }
+
+    &-checked {
+      width: 32px;
+      height: 32px;
+      // border: 1px solid #AA1612;
+      // border-radius: 50%;
+      display: inline-block;
+      position: relative;
+
+      i {
+        color: #AA1612;
+        position: absolute;
+        left: -1px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 35px;
+        display: block;
+        text-align: center;
+        line-height: 34px;
+        // z-index: 2;
+      }
+    }
+  }
+}

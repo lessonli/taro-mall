@@ -1,0 +1,30 @@
+.onePriceListPage {
+  // display: flex;
+  // flex-direction: column;
+  overflow-y: hidden;
+
+  &-tabs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &-list {
+    height: calc(100% - 88px);
+
+    &__wrap {
+      padding-top: 24px;
+      padding-bottom: 120px;
+    }
+  }
+
+  &-ScrollView {
+    height: 100%;
+  }
+
+  &-VirtualList {
+    // padding-top: 88px;
+  }
+}

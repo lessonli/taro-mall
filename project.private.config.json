@@ -1,0 +1,60 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "登录",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/goods/index",
+          "pathName": "pages/goods/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/index",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/classify/index",
+          "pathName": "pages/classify/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/index",
+          "pathName": "pages/store/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/storeInfo/index",
+          "pathName": "pages/store/storeInfo/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/storeSetting/index",
+          "pathName": "pages/store/storeSetting/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

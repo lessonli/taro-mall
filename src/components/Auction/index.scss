@@ -1,0 +1,86 @@
+.Auction {
+  position: absolute;
+  left: 0;
+  top: -36px;
+  right: 0;
+  bottom: 0;
+
+  .Auction-box {
+    box-sizing: border-box;
+    width: 686px;
+    height: 72px;
+    background: linear-gradient(90deg, #E4C087 0%, #C08C4C 100%);
+    border-radius: 8px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    justify-content: space-between;
+
+    &-end {
+      background: linear-gradient(90deg, #DBDBDB 0%, #BBBBBB 100%);
+    }
+
+    &-title {
+      font-size: $fz30;
+      color: $white;
+      margin-left: 11px;
+      display: inline-block;
+    }
+
+    &-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &-end {
+        font-size: 26px;
+        color: $white;
+      }
+    }
+
+    &-tips {
+      font-size: $fz24;
+      color: $white;
+      // margin-left: 50px;
+      // margin-right: 8px;
+      display: inline-block;
+    }
+
+    &-yanshi {
+      font-size: $fz24;
+      color: $white;
+      margin-left: 16px;
+      display: inline-block;
+    }
+
+    &-time {
+      font-size: 24px;
+      height: 72px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+
+      .timeBox {
+        // width: 36px;
+        padding: 0 6px;
+        height: 36px;
+        background: #FFFFFF;
+        border-radius: 4px;
+        // line-height: 36px;
+        font-size: 24px;
+        font-weight: 400;
+        color: #C19529;
+        box-sizing: border-box;
+        background: #fff;
+        text-align: center;
+        line-height: 36px;
+      }
+
+      p {
+        margin-left: 8px;
+      }
+    }
+  }
+
+}

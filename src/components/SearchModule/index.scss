@@ -1,0 +1,42 @@
+.searchBox {
+  background: $white;
+  min-height: 97px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-box {
+    height: 64px;
+    // width: 548px;
+    width: 686px;
+    border-radius: 8px;
+    background: $gray;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 27px;
+      color: #999;
+      margin-left: 26px;
+    }
+
+
+    input {
+      margin-left: 20px;
+      height: 42px;
+      font-size: 30px;
+      margin-left: 15px;
+      color: #999999;
+    }
+  }
+
+  &-btn {
+    width: 64px;
+    height: 45px;
+    margin-right: 32px;
+    font-size: 32px;
+    color: #333333;
+    line-height: 45px;
+  }
+}

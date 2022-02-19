@@ -1,0 +1,148 @@
+.couponsListContainerScrollView {
+  
+  .Bw-Modal-box {
+    width: 680px;
+  }
+  $color: #aa1612;
+  height: calc(100vh - 80px);
+  box-sizing: border-box;
+  padding: 0 24px;
+  padding-bottom: 52px;
+
+  .couponsItemBox {
+    width: 100vw;
+    &-couponsItem {
+      position: relative;
+      width: 702px;
+      height: 246px;
+      margin-top: 24px;
+      background: #ffffff;
+      border-radius: 8px;
+      // background: pink;
+
+      &-top {
+        width: 100%;
+        height: 160px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+
+        &-left {
+          width: 190px;
+          height: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          // float: left;
+          // display: table-cell;
+          // vertical-align: middle;
+          // text-align: center;
+
+          &-sys {
+            // vertical-align: baseline;
+            color: $color;
+            font-size: 32px;
+            font-weight: 500;
+            margin-top: 20px;
+          }
+          &-money {
+            // vertical-align: baseline;
+            font-size: 60px;
+            color: $color;
+            font-weight: 500;
+          }
+        }
+        &-right {
+          // float: left;
+          margin-left: 24px;
+          &-name {
+            color: #333;
+            font-size: 30px;
+            line-height: 51px;
+            margin-top: 16px;
+          }
+          &-date {
+            font-size: 22px;
+            color: #999;
+            line-height: 38px;
+
+            &-detail {
+              font-size: 22px;
+              color: #3295fa;
+            }
+          }
+          &-watermark_zhongzhi {
+            position: absolute;
+            top: 0;
+            right: 24px;
+
+            width: 126px;
+            height: 115px;
+            background-image: url("https://tsla.bowuyoudao.com/weapp/img/yizhongzhi.png");
+            background-size: 126px 115px;
+          }
+          &-watermark_jieshu {
+            position: absolute;
+            top: 0;
+            right: 24px;
+            width: 126px;
+            height: 115px;
+            background-image: url("https://tsla.bowuyoudao.com/weapp/img/yijieshu.png");
+            background-size: 126px 115px;
+          }
+        }
+      }
+      &-bottom {
+        padding: 0 24px;
+        font-size: 26px;
+        height: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-send {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #aa1612;
+          width: 136px;
+          height: 53px;
+          background: #ffffff;
+          border-radius: 7px;
+          border: 1px solid rgba(170, 22, 18, 0.5);
+        }
+      }
+    }
+  }
+}
+
+.couponsListContainer-modal {
+  text-align: left;
+  padding-left: 24px;
+  line-height: 52px;
+}
+.couponsListContainer-btnBox{
+  height: 98px;
+}
+.couponsListContainer {
+  position: relative;
+  .couponsListContainer-btn {
+    // padding:0 24px;
+    font-size: 36px;
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+    width: 686px;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #aa1612;
+    border-radius: 8px;
+    text-align: center;
+    color: #FFFFFF;
+    &:active{
+      opacity: .5;
+    }
+
+  }
+}

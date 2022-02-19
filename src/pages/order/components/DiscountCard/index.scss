@@ -1,0 +1,207 @@
+.DiscountCard {
+  width: 750px;
+  // height: 313px;
+  background: $white;
+  padding: 20px 32px 0 32px;
+  box-sizing: border-box;
+  margin-top: 24px;
+
+  .fz32 {
+    font-size: 32px !important;
+  }
+
+  &-item {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 28px;
+      color: #333333;
+
+      &-tips {
+        font-size: 20px;
+        color: #AA1612;
+        padding: 2px 8px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 28px;
+        margin-left: 16px;
+        background: rgba(170, 22, 18, 0.08);
+      }
+    }
+
+    &-radius {
+      // width: 32px;
+      // height: 32px;
+      // border: 1px solid #BDBDBD;
+      // text-align: center;
+      // line-height: 32px;
+      display: inline-block;
+      // border-radius: 50%;
+      margin-left: 8px;
+      // font-size: 24px;
+    }
+
+    &-num {
+      font-size: 24px;
+      margin-left: 16px;
+      color: #999999;
+    }
+
+    &-price {
+      font-size: 28px;
+      font-weight: 500;
+      color: #333333;
+    }
+
+    &-red {
+      font-size: 28px;
+      font-weight: 500;
+      color: #AA1612;
+    }
+
+    &-tips {
+      font-size: 20px;
+      height: 28px;
+      font-weight: 400;
+      color: #AA1612;
+      padding: 0 8px;
+      border: 1px solid #D78D8B;
+      margin-left: 16px;
+    }
+  }
+
+  .h80 {
+    border-top: 1px solid #EEEEEE;
+    height: 79px;
+    margin-top: 20px;
+  }
+
+  &-noCoupon,
+  &-noRedBag {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    margin: 24px;
+
+    .weui-cells_checkbox {
+      height: 100%;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    &-text {
+      font-size: 32px;
+      color: #333333;
+      margin-left: 16px;
+    }
+  }
+
+  .bw-RedBag {
+    width: 100%;
+
+    &-noUse {
+      padding: 0 24px;
+
+      &-title {
+        font-size: 28px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        margin-top: 24px;
+      }
+
+      &-content {
+        height: 550px;
+        margin-top: 16px;
+        overflow-y: scroll;
+
+        &-item {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 702px;
+          height: 135px;
+          background: #FFF4E4;
+          border-radius: 8px;
+          opacity: 0.5;
+          margin-bottom: 24px;
+
+          &-left {
+            margin-left: 16px;
+            width: 156px;
+
+            &-1 {
+              font-size: 24px;
+              font-weight: 500;
+              color: #EA3131;
+            }
+
+            &-2 {
+              font-size: 40px;
+              font-weight: 500;
+              color: #EA3131;
+            }
+          }
+
+          &-right {
+            margin-left: 40px;
+
+            &-1 {
+              font-size: 30px;
+              color: #333333;
+            }
+
+            &-2 {
+              font-size: 24px;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #999999;
+              margin-top: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    &-item {
+      width: 702px;
+      height: 104px;
+      background: #FFF4E4;
+      border-radius: 8px;
+      margin: auto;
+      display: flex;
+      padding: 0 24px;
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: space-between;
+
+      &-left {
+        display: inline-flex;
+        align-items: center;
+
+        &-img {
+          width: 74px;
+          height: 74px;
+
+        }
+
+        &-all {
+          font-size: 32px;
+          color: #333333;
+          margin-left: 15px;
+        }
+
+        &-count {
+          font-size: 32px;
+          color: #EA3131;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+.bw-stars {
+  display: inline-block;
+  // align-items: center;
+  vertical-align: middle;
+  &-item {
+    width: 36px;
+    height: 36px;
+    margin-right: 24px;
+  }
+}

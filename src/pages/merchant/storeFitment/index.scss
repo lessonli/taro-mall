@@ -1,0 +1,95 @@
+.storeFitment {
+  padding: 24px;
+
+
+  .at-form {
+    background: $gray;
+    // height: 100vh;
+    position: relative;
+  }
+
+  .at-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 8px !important;
+  }
+
+  &-tips {
+    color: $color999;
+    font-size: $fz24;
+    height: 72px;
+    line-height: 72px;
+    background: $gray;
+  }
+
+  &-logo,
+  &-address {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+      font-size: $fz32;
+      color: #333333;
+    }
+
+    &-src {
+      width: 100px;
+      height: 100px;
+      background: #EEEEEE;
+      border-radius: 8px;
+      // border: 1px solid #E8E4E4;
+      // margin-right: 16px;
+    }
+
+    &-tips {
+      font-size: $fz32;
+      color: $color999;
+      float: 16px;
+
+    }
+  }
+
+  &-address {
+    height: 109px;
+  }
+
+  &-card {
+    padding: 32px 24px;
+    overflow: hidden;
+
+    &-title {
+      font-size: $fz32;
+      color: #333333;
+    }
+
+    &-tips {
+      font-size: $fz24;
+      color: $color999;
+      margin-top: 8px;
+      margin-top: 24px;
+    }
+
+    &-photo {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        width: 315px;
+        height: 210px;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        margin-top: 24px;
+      }
+    }
+  }
+
+  &-btn {
+    margin-top: 24px;
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 702px;
+  }
+}

@@ -1,0 +1,20 @@
+.livesetting {
+  &-Upload-item {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .weui-input {
+    min-width: 380px;
+    text-align: right;
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+  }
+}

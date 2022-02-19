@@ -1,0 +1,57 @@
+.ReceiveAdds {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 32px;
+  color: $fontColor;
+  font-size: $fz32;
+
+  .ad-icon {
+    font-size: $fz32;
+    margin-right: 20px;
+    color: $tabColor;
+  }
+
+  .next-btn {
+    font-size: $fz32;
+  }
+
+  &__me {
+    font-size: $fz30;
+    &-phone {
+      margin-left: 26px;
+    }
+    &-detail {
+      margin-top: 8px;
+      font-size: $fz28;
+      color: $color999;
+    }
+  }
+
+  &__empty {
+    font-weight: 500;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  &__border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2PX;
+    background-image: url(https://tsla.bowuyoudao.com/weapp/img/addr_border.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  .copy-btn-wrap {
+    position: relative;
+    // width: 1px;
+    .copy-btn {
+      // position: absolute;
+      // top: -22px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+
+
+
+.bwAbout{
+  padding: 0 24px;
+  &-logo{
+    height: 368px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-img{
+      width: 166px;
+      height: 166px;
+      border-radius: 8px;
+     
+    }
+  }
+}

@@ -1,0 +1,197 @@
+.storeApprove {
+  padding: 24px;
+  touch-action: pan-y;
+
+
+  .at-form {
+    background: $gray;
+    // height: 100vh;
+    position: relative;
+  }
+
+  .at-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-tips {
+    color: $color999;
+    font-size: $fz24;
+    height: 72px;
+    line-height: 72px;
+    background: $gray;
+  }
+
+  &-logo,
+  &-address {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+      font-size: $fz32;
+      color: #333333;
+    }
+
+    &-src {
+      width: 100px;
+      height: 100px;
+      background: #EEEEEE;
+      border-radius: 8px;
+      // border: 1px solid #E8E4E4;
+      margin-right: 16px;
+    }
+
+    &-tips {
+      font-size: $fz32;
+      color: $color999;
+      float: 16px;
+
+    }
+  }
+
+  &-address {
+    height: 109px;
+  }
+
+  &-card {
+    padding: 32px 24px;
+    overflow: hidden;
+    background: $white;
+    margin-top: 24px;
+
+    &-xieyi {
+      font-size: 26px;
+      color: #666666;
+      display: block;
+      margin-top: 24px;
+    }
+
+    &-btn {
+      margin-top: 24px;
+    }
+
+    &-title {
+      font-size: $fz32;
+      color: #333333;
+    }
+
+    &-tips {
+      font-size: $fz24;
+      color: $color999;
+      margin-top: 8px;
+      margin-top: 24px;
+    }
+
+    &-photo {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      border-radius: 8px;
+
+      img {
+        width: 315px;
+        height: 210px;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        // margin-top: 24px;
+      }
+
+      &-card-exm {
+        border-radius: 8px;
+        min-width: 315px;
+        min-height: 210px;
+        overflow: hidden;
+        position: relative;
+
+        &-tips {
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          font-size: 20px;
+          color: #FFFFFF;
+          line-height: 28px;
+          background: #000000;
+          border-radius: 8px 0px 8px 0px;
+          opacity: 0.4;
+          text-align: center;
+          padding: 5px 9px;
+        }
+      }
+    }
+  }
+
+  &-btn {
+    margin-top: 24px;
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    width: 702px;
+  }
+
+  &-card {
+    padding: 32px 24px;
+    overflow: hidden;
+
+    &-title {
+      font-size: $fz32;
+      color: #333333;
+    }
+
+    &-tips {
+      font-size: $fz24;
+      color: $color999;
+      margin-top: 8px;
+      margin-top: 24px;
+    }
+
+    &-photo {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      &-preview {
+        position: relative;
+        background: #FAFAFA;
+
+        img {
+          width: 315px;
+          height: 210px;
+          border-radius: 8px;
+        }
+
+        .text {
+          font-size: 24px;
+          line-height: 33px;
+          left: 62px;
+          top: 153px;
+          position: absolute;
+          color: #999999;
+        }
+      }
+
+      &-src {
+        width: 315px;
+        // height: 210px;
+        // border: 2px solid rgba(0, 0, 0, 0.15);
+        // margin-top: 24px;
+      }
+
+      &-card {
+        height: 210px;
+      }
+
+      img {
+        width: 315px;
+        height: 210px;
+        border: 2px solid rgba(0, 0, 0, 0.15);
+        // margin-top: 24px;
+      }
+    }
+  }
+}
+
+input {
+  text-align: right;
+}

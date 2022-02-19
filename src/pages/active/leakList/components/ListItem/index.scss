@@ -1,0 +1,84 @@
+
+.bw-leak-list-listItem{
+  width: 343px;
+  height: 545px;
+  // background: pink;
+  margin-top: 32px;
+  &-imgWrap{
+    position: relative;
+    &-djs{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      width: 200%;
+      height: 80px;
+      // line-height: 80px;
+      bottom: -20px;
+      left: -50%;
+      background: #000000;
+      opacity: 0.5; 
+      font-size: 48px;
+      color: #fff;
+      text-align: center;
+      transform: scale(.5);
+      &-text{
+        text-align: center;
+      }
+    }
+  }
+  &-img{
+    width: 343px;
+    height: 343px;
+    border-radius: 8px;
+    vertical-align: top;
+  }
+  &-content{
+    width: 343px;
+    // height: 202px;
+
+    box-sizing: border-box;
+    padding: 0 16px;
+    padding-bottom: 16px;
+    background: #fff;
+    &-title{
+      @include line-clamp(1);
+      font-size: 28px;
+      font-weight: 500;
+      padding-top: 16px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+    &-priceInfo{
+      @include flexCenter;
+      margin-top: 8px;
+      &-price{
+        color: $color-primary;
+        font-size: 36px;
+      }
+      &-number{
+        color: #999;
+        font-size: 24px;
+        vertical-align: middle;
+        line-height: 36px;
+      }
+    }
+    &-add{
+      width: 311px;
+      height: 56px;
+      font-size: 28px;
+      color: #fff;
+      font-weight: 400;
+    }
+    &-overBtn{
+     opacity: .3;
+    }
+  }
+}
+.bw-leak-list-listItem-img{
+  border-radius: 8px;
+}
+
+.bw-leak-money{
+  display: inline-block;
+  font-size: 24px;
+}

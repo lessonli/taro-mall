@@ -1,0 +1,23 @@
+
+.bw-help{
+  padding: 0 24px;
+  &-box{
+   &-item{
+     overflow: hidden;
+     border-radius: 8px;
+     :last-child{
+       border: none;
+     }
+   }
+  }
+ 
+}
+.bw-help-title{
+  display: flex;
+  align-items: center;
+  &-img{
+    width: 66px;
+    height: 66px;
+    margin-right: 16px;
+  }
+}

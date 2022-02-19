@@ -1,0 +1,197 @@
+.redReceived {
+  height: calc(100vh);
+  overflow-y: scroll;
+
+  &-count {
+    width: 750px;
+    // height: 205px;
+    height: 190px;
+    background-color: #fff;
+    overflow: hidden;
+    background: url("https://tsla.bowuyoudao.com/weapp/img/receiveRed_bg.png");
+    background-size: 750px 266px;
+    background-repeat: no-repeat;
+    &-totalText {
+      margin: 32px 0 0 48px;
+      // margin-top: 32px;
+      font-size: 28px;
+      color: #ffdabb;
+      line-height: 40px;
+      // text-align: center;
+      &-money {
+        color: #d63e27;
+      }
+    }
+    &-totalMoney {
+      // text-align: center;
+      // margin-top: 8px;
+      margin-left: 40px;
+      font-size: 72px;
+      color: #ffdca8;
+      font-weight: 500;
+    }
+  }
+  &-tipBox {
+    width: 750px;
+    height: 72px;
+    box-sizing: border-box;
+    background: #e26f53;
+    color: #fcdabb;
+    padding: 0 40px;
+    font-size: 28px;
+    line-height: 72px;
+  }
+  &-list {
+    margin-top: 24px;
+  }
+  .ListItem {
+    height: 139px;
+    box-sizing: border-box;
+    padding: 24px 32px;
+    margin-top: 24px;
+  }
+  &-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-money {
+      width: 110px;
+      text-align: center;
+      &-sys {
+        font-size: 24px;
+        font-weight: 500;
+        color: #ea3131;
+      }
+      &-price {
+        font-size: 40px;
+        font-weight: 500;
+        color: #ea3131;
+      }
+    }
+    &-title {
+      margin-left: 24px;
+
+      &-name{
+     
+      }
+      &-tip{
+        font-size: 24px;
+      }
+    }
+
+    // &-store {
+    //   display: flex;
+    //   &-name {
+    //     color: #333;
+    //     font-size: 32px;
+    //     max-width: 400px;
+    //     // width: 400px;
+    //     white-space: nowrap;
+    //     overflow: hidden;
+    //     text-overflow: ellipsis;
+    //     // @include sl();
+
+    //     &-tag {
+    //       width: 96px;
+    //       height: 28px;
+    //       border-radius: 4px;
+    //       color: #c19529;
+    //       border: 2px solid #e6c26a;
+    //       font-size: 20px;
+    //       text-align: center;
+    //       margin-left: 8px;
+    //       vertical-align: middle;
+    //       margin-top: 8px;
+    //     }
+    //   }
+    // }
+    &-time {
+      font-size: 24px;
+      color: #999;
+    }
+  }
+  &-right {
+    &-money {
+      color: #d63e27;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    &-text {
+      font-size: 24px;
+      color: #999;
+    }
+  }
+  &-coupon {
+    // padding: 0 24px;
+
+    &-tab {
+      width: 100%;
+      height: 96px;
+      box-sizing: border-box;
+      margin-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      padding: 0 24px;
+
+      background-color: #fff;
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        width: 218px;
+        height: 64px;
+        font-size: 28px;
+        color: #333;
+        border-radius: 8px;
+      }
+      &-itemActive {
+        background: rgba(170, 22, 18, 0.08);
+        color: #aa1612;
+      }
+    }
+    &-tabList {
+      background-color: #fff;
+      padding: 24px 24px;
+      box-sizing: border-box;
+      margin-top: 24px;
+      .bw-coupons-list-item {
+        margin-top: 24px;
+        &:nth-of-type(1) {
+          margin-top: 0;
+        }
+      }
+      &-use {
+        width: 136px;
+        height: 53px;
+        margin-right: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        border-radius: 7px;
+        border: 1px solid rgba(170, 22, 18, 0.5);
+        color: #ea3131;
+        font-size: 26px;
+        text-align: center;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+.redReceived-right-btn {
+  width: 136px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #EA3131;
+  background: #ffffff;
+  border-radius: 7px;
+  border: 1px solid rgba(170, 22, 18, 0.5);
+}

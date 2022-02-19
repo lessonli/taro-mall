@@ -1,0 +1,37 @@
+@mixin desclist() {
+  color: $bgColorBd;
+  font-size: $fz24;
+  text-align: center;
+  margin: 12px auto;
+  padding: 5px 12px;
+}
+
+.bw-scroll-view {
+  &-nomore {
+    @include desclist();
+  }
+
+  &-load-more {
+    @include desclist();
+  }
+
+  &-refresh {
+    @include desclist();
+  }
+
+  &-LoadMoreBtn {
+    @include desclist();
+    border: 1px solid $bgColorBd;
+    border-radius: 8px;
+    
+  }
+}
+
+.LoadingView {
+  padding-top: 24px;
+  color: $bgColorBd;
+}
+
+.bw-scroll-view-nomore {
+  padding-top: 12px;
+}

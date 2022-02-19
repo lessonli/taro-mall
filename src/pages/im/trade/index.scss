@@ -1,0 +1,150 @@
+.im-trade {
+  &-tabs {
+    position: relative;
+
+    &-box {
+      background: $white;
+    }
+
+    &-unread-merchant {
+      position: absolute;
+      padding: 0 15px;
+      background: #f00;
+      border-radius: 50px;
+      color: $white;
+      font-size: 24px;
+      font-weight: 600;
+      left: 33%;
+      top: 10px;
+      z-index: 2;
+      display: block;
+    }
+
+    &-unread-buyer {
+      position: absolute;
+      padding: 0 15px;
+      background: #f00;
+      border-radius: 50px;
+      color: $white;
+      font-size: 24px;
+      font-weight: 600;
+      right: 12%;
+      top: 10px;
+      z-index: 2;
+      display: block;
+    }
+  }
+
+  .messageBack {
+    display: block;
+    font-weight: 600;
+    font-size: 45px;
+  }
+
+  &-empty {
+    margin-top: 50%;
+  }
+
+  &-content {
+    padding: 0 24px;
+
+    &-item {
+      &-time {
+        font-size: 24px;
+        text-align: center;
+        color: #999999;
+        line-height: 33px;
+        margin: 24px 0 16px 0;
+        width: 100%;
+        display: block;
+      }
+
+      &-box {
+        background: $white;
+        padding: 24px 24px 0 24px;
+        box-sizing: border-box;
+      }
+
+      &-title {
+        font-size: 32px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 45px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #eee;
+
+      }
+
+      &-content {
+        font-size: 28px;
+        color: #999999;
+        line-height: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
+      &-card {
+        width: 100%;
+        background: #F7F7F7;
+        height: 128px;
+        margin-top: 24px;
+
+        &-img {
+          width: 128px;
+          height: 128px;
+          border-radius: 8px 0 0 8px;
+        }
+
+        &-info {
+          display: inline-block;
+          margin-left: 16px;
+          vertical-align: top;
+
+          &-title {
+            font-size: 28px;
+            line-height: 40px;
+            color: #666666;
+            margin-top: 19px;
+            max-width: 400px;
+            @include line-clamp(1)
+          }
+
+          &-des {
+            font-size: 24px;
+            color: #999999;
+            margin-top: 16px;
+
+            .ml32 {
+              margin-left: 32px;
+            }
+          }
+        }
+      }
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 72px;
+        border-top: 1px solid #eee;
+        // margin-top: 24px;
+
+        .left {
+          font-size: 28px;
+          color: #AA1612;
+        }
+
+        .right {
+          font-size: 16px;
+          color: #BDBDBD;
+        }
+      }
+
+      &-img {
+        width: 100%;
+        height: 260px;
+        margin-top: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.Certify {
+  padding: 24px;
+
+  .certify-code {
+    min-width: 200px;
+    height: 45px;
+    line-height: 45px;
+    font-size: $fz32;
+    color: $checked;
+    text-align: right;
+    // padding-left: 24px;
+    // display: inline-block;
+    display: block;
+    // border-left: 1px solid #D8D8D8;
+  }
+
+  &-box {
+    background: $gray;
+    padding: 24px 24px 8px 24px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      &-label {
+        font-size: 28px;
+        color: #999999;
+        line-height: 40px;
+        display: inline-block;
+        width: 170px;
+      }
+
+      &-value {
+        font-size: 28px;
+        color: #333333;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .at-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &-btn {
+    margin-top: 40px;
+  }
+
+  &-tipsBox {
+    margin-top: 64px;
+
+    &-title {
+      color: #333;
+      font-weight: 500;
+      font-size: $fz32;
+      margin-bottom: 24px;
+    }
+
+    &-tips {
+      color: $color999;
+      font-size: $fz28;
+      line-height: 40px;
+    }
+  }
+}
+
+.certify-atInput {
+  padding-left: 0 !important;
+}

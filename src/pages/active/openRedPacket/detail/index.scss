@@ -1,0 +1,90 @@
+
+.redDetail{
+  .CanvasPhoto-bottom-operation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .bw-BackAndHomeBtn-item{
+    color: #fff;
+  }
+  .bw-BackAndHomeBtn-item:first-child:after{
+    top: 13px;
+    background-color: #FFB6A0
+  ;
+  }
+  .bw-navigationBar-contents-title {
+    color: #fff;
+  }
+  &-head{
+    width: 750px;
+    height: 172px;
+    background: url('https://tsla.bowuyoudao.com/weapp/img/redDetailBg.png');
+    background-size: 750px,172px;
+    background-repeat: no-repeat;
+  }
+  &-info{
+    margin-top: 38px;
+    width: 100%;
+    &-from{
+      width: 477px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 28px;
+      color: #999;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &-money{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #D63E27;
+      margin-top: 29px;
+      font-size: 72px;
+      font-weight: 500;
+    }
+  }
+  &-cardBox{
+    padding: 0 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+    &-card{
+      width: 702px;
+      padding-top: 8px;
+      box-sizing: border-box;
+      padding: 0 24px;
+      background-color: #fff;
+      font-size: 28px;
+      color: #666;
+      border-radius: 8px;
+      &-text{
+        display: flex;
+        height: 88px;
+        // justify-content: center;
+        align-items: center;
+        &-see{
+          color: #3295FA;
+        }
+      }
+    }
+  }
+  &-btnBox{
+    padding: 0 24px;
+    &-btn{
+      width: 702px;
+      height: 98px;
+      margin-top: 32px;
+      background-color: #fff;
+      border: none;
+      border-radius: 8px;
+      color: #D63E27;
+      font-size: 36px;
+      
+    }
+  }
+  .openRedPacket-liveModal{
+    
+  }
+}

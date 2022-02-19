@@ -1,0 +1,74 @@
+.afterSaleListPage {
+  &__buyer {
+    height: 100%;
+  }
+
+  &__merchant {
+    height: calc(100% - 88px);
+  }
+  &-ScrollView {
+    
+    width: 100%;
+
+    &-item {
+      background-color: $white;
+      margin-top: 24px;
+      &-header {
+        border-bottom: 1px solid #eee;
+
+        &-l {
+          display: flex;
+          align-items: center;
+          color: #333333;
+        }        
+
+        &-ava {
+          width: 40px;
+          height: 40px;
+        }
+
+        .ava-user {
+          border-radius: 50%;
+        }
+
+        &-text {
+          color: #C19529;
+        }
+      }
+
+
+    }
+  }
+
+  &-product {
+    &-icon {
+      flex: 0 0 180px;
+      height: 180px;
+      border-radius: 4px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1;
+      &-name {
+        @include line-clamp(2);
+      }
+      &-result {
+        color: #333333;
+        font-size: 28px;
+      }
+    }
+
+    &-footer {
+      padding: 16px 32px;
+      padding-top: 0;
+      text-align: right;
+      border-top: 1px solid #eee;
+      .at-button {
+        display: inline-flex;
+      }
+    }
+  }
+}

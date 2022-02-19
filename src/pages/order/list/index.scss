@@ -1,0 +1,149 @@
+.orderListPage {
+  &-ScrollView {
+    height: calc(100% - 88px);
+  }
+
+  .SeacherHeader {
+    background-color: #fff;
+    &-container {
+      background-color: #F7F7F7;
+      border-radius: 8px;
+      height: 64px;
+      line-height: 64px;
+
+      &_pla {
+        color: #BDBDBD;
+        font-size: 30px;
+        padding-left: 16px;
+        border-left: 1px solid #BDBDBD;
+        margin-left: 8px;
+      }
+
+      .myIcon {
+        font-size: 32px;
+        display: inline-block;
+        transform: scale(0.5);
+      }
+    }
+  }
+
+  .ordersearcherlist-header {
+    background-color: #fff;
+    padding: 16px 32px;
+  }
+}
+
+.OrderItemCard {
+  background-color: $white;
+  color: $fontColor;
+  font-size: $fz28;
+  margin-top: 24px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 1px solid $colorEEE;
+
+    &-l {
+      display: flex;
+      align-items: center;
+
+      &--img {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      &--round {
+        border-radius: 50%;
+      }      
+
+      &--name {
+        @include line-clamp(1);
+        max-width: 365px;
+      }
+
+      &--level {
+        width: 46px;
+        height: 28px;
+      }
+    }
+
+    &-r {
+      color: #C19529;
+    }
+  }
+
+  &-product {
+    display: flex;
+    align-items: center;
+    padding: 24px 32px;
+
+    &-l {
+      flex: 0 0 180px;
+      height: 180px;
+      margin-right: 16px;
+    }
+
+    &-r {
+      flex: 1;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-name {
+        color: $tabColor;
+        @include line-clamp(2);
+      }
+
+      &-nums {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-l {
+          color: $fontColor;
+
+          &__price {
+            margin-right: 16px;
+          }
+        }
+
+        &-r {
+          color: $color999;
+
+        }
+      }
+    }
+  }
+
+  &-footer {
+    padding: 24px 32px;
+    border-top: 1px solid $colorEEE;
+    text-align: right;
+    &-1 {
+      font-size: 24px;
+      color: $tabColor;
+      // margin-bottom: 24px;
+      &__1 {
+        color: $color999;
+        margin-right: 32px;
+      }
+    }
+
+    &-btns {
+      justify-content: flex-end;
+      .at-button {
+        margin-top: 24px;
+        display: inline-flex;
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+}

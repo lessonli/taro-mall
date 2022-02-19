@@ -1,0 +1,22 @@
+
+.Recharge{
+    padding: 0 24px;
+    &-panel{
+				height: 400px;
+				box-sizing: border-box;
+        padding-top: 60px;
+				margin-top: 24px;
+        background: #fff;
+        &-account{
+					text-align: center;
+					&-text{
+						font-size: 26px;
+						color: #999999;
+					}
+					&-num{
+						font-size: 60px;
+						color: #333333;
+					}
+				}
+    }
+}

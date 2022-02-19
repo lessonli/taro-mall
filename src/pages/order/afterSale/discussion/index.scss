@@ -1,0 +1,49 @@
+
+
+.afterScale-discussion-head{
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  margin-top: 24px;
+  padding: 27px 32px;
+  border-bottom: 1px solid #EEEEEE;
+  background-color: #fff;
+  &-img{
+    width: 88px;
+    height: 88px;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+}
+
+.afterScale-discussion-info{
+  padding-left: 32px;
+  line-height: 88px;
+  font-size: 32px;
+  color: #666;
+  background-color: #fff;
+}
+
+.afterScale-discussion-head-RoundImg{
+  border-radius: 50%;
+}
+
+
+
+
+
+.afterScale-discussion-title{
+  font-size: 32px;
+  color: #333333;
+}
+
+.afterScale-discussion-time{
+  font-size: 24px;
+  color: #999999;
+}
+
+.afterScale-discussion-info-image {
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+}

@@ -1,0 +1,11 @@
+/**
+* https://github.com/NervJS/taro/issues/7908
+此浏览器兼容问题还没找到很好的办法去解决，可以这样先绕过，副作用是使用 visibility 样式时控制不了子元素：
+*/
+taro-checkbox-core,taro-checkbox-group-core,taro-radio-core,taro-radio-group-core,taro-swiper-core,taro-swiper-item-core,taro-audio-core,taro-block-core,taro-button-core,taro-camera-core,taro-canvas-core,taro-cover-image-core,taro-cover-view-core,taro-custom-wrapper-core,taro-form-core,taro-icon-core,taro-image-core,taro-input-core,taro-label-core,taro-movable-area-core,taro-movable-view-core,taro-navigator-core,taro-open-data-core,taro-picker-view-column-core,taro-picker-view-core,taro-progress-core,taro-pull-to-refresh,taro-rich-text-core,taro-scroll-view-core,taro-slider-core,taro-switch-core,taro-tabbar,taro-text-core,taro-textarea-core,taro-view-core,taro-web-view-core,taro-picker-core,taro-picker-group,taro-video-core,taro-video-control,taro-video-danmu{
+  visibility:visible;
+}
+taro-swiper-core,taro-block-core,taro-cover-image-core,taro-cover-view-core,taro-custom-wrapper-core,taro-form-core,taro-navigator-core,taro-open-data-core,taro-scroll-view-core,taro-tabbar,taro-view-core,taro-web-view-core {
+  display: block;
+}
+// .hydrated{visibility:inherit}

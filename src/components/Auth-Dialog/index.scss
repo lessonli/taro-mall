@@ -1,0 +1,29 @@
+.AuthDialog {
+  @include fixed();
+  display: flex;
+  z-index: 2;
+
+  &-box {
+    position: relative;
+    margin: auto;
+
+    &-img {
+      width: 600px;
+    }
+
+    &-btn {
+      position: absolute;
+      width: 536px;
+      height: 98px;
+      background: #333333;
+      border-radius: 8px;
+      left: 32px;
+      bottom: 52px;
+      font-size: 36px;
+      font-weight: 500;
+      color: #F2D9B9;
+      line-height: 98px;
+      text-align: center;
+    }
+  }
+}

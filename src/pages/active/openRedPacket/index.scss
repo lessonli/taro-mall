@@ -1,0 +1,349 @@
+.openRedPacket {
+  .CanvasPhoto-bottom-operation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .bw-BackAndHomeBtn-item {
+    color: #fff;
+  }
+  .bw-popup__overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .bw-BackAndHomeBtn-item:first-child:after {
+    top: 13px;
+    background-color: #ffb6a0;
+  }
+  .bw-navigationBar-contents-title {
+    color: #fff;
+  }
+  .openRedPacket-tab {
+    display: flex;
+    height: 96px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    // &-item{
+    //   position: relative;
+    // }
+    font-size: 32px;
+    &-item-active {
+      color: #333;
+      position: relative;
+      &:after {
+        position: absolute;
+        bottom: -8px;
+        left: calc(50% - 27px);
+        content: "";
+        // color: red;
+        width: 54px;
+        height: 6px;
+        background-color: #aa1612;
+      }
+    }
+  }
+}
+
+.redReceived {
+  box-sizing: border-box;
+  min-height: 300px;
+  .ListItem {
+    height: 139px;
+    box-sizing: border-box;
+    padding: 24px 32px;
+  }
+  &-left {
+    &-store {
+      display: flex;
+      &-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        font-size: 32px;
+        max-width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        &-tag {
+          width: 96px;
+          height: 28px;
+          border-radius: 4px;
+          color: #c19529;
+          border: 2px solid #e6c26a;
+          font-size: 20px;
+          text-align: center;
+          margin-left: 8px;
+        }
+      }
+    }
+    &-time {
+      font-size: 24px;
+      color: #999;
+    }
+  }
+  &-right {
+    &-money {
+      color: #d63e27;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    &-text {
+      font-size: 24px;
+      color: #999;
+    }
+  }
+  &-more {
+    width: 136px;
+    height: 52px;
+    color: #333;
+    font-size: 26px;
+    margin: 24px auto;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.accumulativeShareRewardModal {
+  .bw-popup__container {
+    top: 349px !important;
+    background: none;
+  }
+  .layout-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 579px;
+    height: 583px;
+    &-img {
+      width: 579px;
+      height: 583px;
+    }
+    &-info {
+      position: absolute;
+      top: 0;
+      // left: 0;
+      &-text {
+        margin-top: 58px;
+        color: #e08018;
+        font-size: 24px;
+        text-align: center;
+      }
+      &-title {
+        margin-top: 16px;
+        color: #d37208;
+        font-size: 44px;
+        text-align: center;
+        font-weight: 600;
+      }
+      &-money {
+        color: #d63e27;
+        font-size: 72px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 16px;
+      }
+      &-share {
+        width: 480px;
+        height: 100px;
+        color: #741d1a;
+        font-size: 36px;
+        line-height: 80px;
+        text-align: center;
+        margin-top: 108px;
+        background: url("https://tsla.bowuyoudao.com/weapp/img/redBtn2.png");
+        background-size: 100%, 100%;
+        background-repeat: no-repeat;
+        border: none;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+      &-record {
+        margin-top: 8px;
+        font-size: 28px;
+        text-align: center;
+        color: #ffd087;
+      }
+    }
+  }
+}
+.shareModal {
+  .bw-popup__container {
+    top: 272px !important;
+    background: none;
+  }
+  .layout-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 638px;
+    height: 820px;
+    &-img {
+      width: 638px;
+      height: 820px;
+    }
+    &-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      font-size: 32px;
+      color: #fddeb2;
+    }
+    &-info {
+      position: absolute;
+      top: 0;
+      &-tip {
+        margin-top: 177px;
+        color: #fff7d4;
+        font-size: 26px;
+        text-align: center;
+        &-icon {
+          display: inline-block;
+          font-size: 30px;
+          vertical-align: middle;
+        }
+      }
+      &-img {
+        position: absolute;
+        left: calc(50% - 51px);
+        top: 242px;
+        width: 102px;
+        height: 102px;
+        border-radius: 50%;
+      }
+      &-text {
+        font-size: 28px;
+        margin-top: 162px;
+        text-align: center;
+        color: #fddeb2;
+        opacity: 0.8;
+      }
+      &-money {
+        font-weight: 500;
+        font-size: 72px;
+        color: #fddeb2;
+        text-align: center;
+        margin-top: 16px;
+      }
+      &-share {
+        width: 480px;
+        height: 100px;
+        color: #741d1a;
+        font-size: 36px;
+        line-height: 80px;
+        text-align: center;
+        margin-top: 32px;
+        background: url("https://tsla.bowuyoudao.com/weapp/img/redBtn2.png");
+        background-size: 100%, 100%;
+        background-repeat: no-repeat;
+        border: none;
+        &:active {
+          opacity: 0.5;
+        }
+      }
+      &-shareInfo {
+        padding: 0 8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 45px;
+        // width: 403px;
+        min-width: 403px;
+        height: 60px;
+        background: rgba(255, 222, 177, 0.5);
+        border-radius: 30px;
+        // opacity: 0.3;
+        &-img {
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          &:nth-of-type(2) {
+            margin-left: -12px;
+          }
+          &:nth-of-type(3) {
+            margin-left: -12px;
+          }
+        }
+        &-text {
+          // display: inline-block;
+          margin-left: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.openRedPacket-liveModal {
+  .bw-popup__container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: none;
+  }
+  .layout-content {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &-content {
+    width: 600px;
+    height: 790px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    position: absolute;
+    top: calc(50% - 395px);
+
+    left: calc(50% - 300px);
+
+    &-img {
+      width: 600px;
+      height: 790px;
+    }
+    &-icon {
+      position: absolute;
+      bottom: -72px;
+      left: 45%;
+      font-size: 32px;
+    }
+  }
+}
+
+.openRedPacket-recommended-scrollview-title{
+  font-size: 32px;
+  color: #333;
+  line-height: 101px;
+  padding: 0 24px;
+}
+.openRedPacket-recommended-scrollview{
+  height: calc(100vh - 641px);
+  padding: 0 24px;
+ 
+}

@@ -1,0 +1,603 @@
+$bgColor: #aa0115;
+$activeColor: #fef7ec;
+$inviteColor: #f2222c;
+$tabActiveColor: #ffeaad;
+$txColor: #DE2819;
+.bw-lx-box {
+  width: 100%;
+  // height: 100%;
+  min-height: 100vh;
+  background-color: $bgColor;
+  padding-bottom: 30px;
+  &-img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 870px;
+    
+    &-rule {
+      position: absolute;
+      top: 68px;
+      right: 24px;
+      background-color: #5b0c0c;
+      color: #fff;
+      width: 80px;
+      height: 32px;
+      text-align: center;
+      font-size: 24px;
+      border-radius: 17px 17px 17px 17px;
+    }
+    &-ele {
+      width: 100%;
+      height: 870px;
+      overflow: hidden;
+    }
+    &-userInfo {
+      position: absolute;
+      top: 570px;
+      left: 134px;
+      width: 486px;
+      height: 250px;
+      &-head {
+        width: 100%;
+        position: relative;
+        font-size: 32px;
+        font-weight: 400;
+        color: #f6e2b4;
+        &-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &-tx {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          box-sizing: border-box;
+          padding-left: 12px;
+          background: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-tx.png")
+            no-repeat;
+          background-size: 100%;
+          width: 138px;
+          height: 40px;
+          line-height: 42px;
+          font-size: 24px;
+
+          color: #f11927;
+          white-space: nowrap;
+        }
+        &-ytx {
+          position: absolute;
+          top: 0;
+          right: 0px;
+          box-sizing: border-box;
+          padding-left: 12px;
+          background-color: #fbeae2;
+          width: 138px;
+          height: 40px;
+          line-height: 42px;
+          font-size: 24px;
+
+          color: #776060;
+          white-space: nowrap;
+          border-radius: 20px 0 0 20px;
+        }
+        &-money {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 36px;
+          height: 63px;
+          &-cny {
+            font-size: 32px;
+            margin-top: 16px;
+            color: #fed597;
+          }
+          &-num {
+            font-size: 64px;
+            font-weight: bold;
+            color: #f6e2b4;
+          }
+        }
+        &-tip {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 0 67px 0 64px;
+          font-size: 24px;
+          color: #f6e2b4;
+          font-weight: 400;
+          margin-top: 24px;
+        }
+        &-tip-buy {
+          width: 100%;
+          box-sizing: border-box;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          color: #f6e2b4;
+          font-weight: 400;
+          margin-top: 24px;
+        }
+      }
+    }
+    &-buttonGroup {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      left: 134px;
+      top: 615px;
+      &-yqzq {
+        width: 223px;
+        height: 84px;
+        margin-right: 34px;
+        background: transparent;
+        // background-image: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-btn.png");
+        background-image: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-btn1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: none;
+        color: $inviteColor;
+        font-weight: bold;
+      }
+      &-mdmyq {
+        color: $inviteColor;
+        font-size: 32px;
+        font-weight: bold;
+        width: 223px;
+        height: 84px;
+        background: transparent;
+        border: none;
+        // background-image: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-btn.png");
+        background-image: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-btn1.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &-tabs {
+    padding: 0 24px;
+    border-radius: 8px;
+    margin-top: 32px;
+    // overflow: hidden;
+    &-list {
+      width: 702px;
+      background-color: #f54c3e;
+      // border-radius: 8px 8px 0px 0px;
+      height: 80px;
+      font-size: 32px;
+      color: #ffffff;
+      &-item {
+        //  兼容 手机 行高居中
+        display: flex;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        float: left;
+        margin: 0 52px 0 52px;
+      }
+      &-item-active {
+        font-size: 32px;
+        font-weight: bold;
+        color: $tabActiveColor;
+      }
+    }
+    &-content {
+      background-color: #fff8ed;
+      &-list {
+        box-sizing: border-box;
+        padding: 10px 24px 40px 24px;
+        min-height: 400px;
+        // display: flex;
+        &-item {
+          margin-top: 39px;
+          font-size: 26px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .bwModalContent {
+    box-sizing: border-box;
+    width: 100%;
+    height: 508px;
+    text-align: left;
+    margin-top: 20px;
+    &-head {
+      box-sizing: border-box;
+      width: 400px;
+      height: 58px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("https://tsla.bowuyoudao.com/weapp/img/ktx_bg.png") no-repeat;
+      background-size: 100%;
+      color: #fed597;
+    }
+    &-btn {
+      width: 284px;
+      height: 84px;
+      background: transparent;
+      background-image: url("https://tsla.bowuyoudao.com/weapp/img/bw-lx-btn.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      border: none;
+      color: $inviteColor;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+    &-tip {
+      margin-top: 45px;
+      color: #fed597;
+      font-size: 22px;
+    }
+  }
+
+  .bw-lx-shareModal {
+    .Bw-Modal-box {
+      height: 700px;
+      width: 639px;
+      padding: 0;
+      background: transparent;
+    }
+    .Bw-Modal-box-close {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border: 1px solid #a3a3a3;
+      text-align: center;
+      border-radius: 50%;
+      color: #a3a3a3;
+    }
+    .Bw-Modal-box-content {
+      padding: 0;
+    }
+    .bwModalShareContent {
+      height: 700px;
+
+      .bwModalShareContent-bg {
+        height: 594px;
+        width: 639px;
+        padding: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background: url("https://tsla.bowuyoudao.com/weapp/img/mdmshare.png");
+        background-size: 100%, 100%;
+        background-repeat: no-repeat;
+
+        &-img {
+          width: 280px;
+          height: 280px;
+          display: flex;
+          justify-content: center;
+
+          align-items: center;
+          margin: 0 auto;
+          &-ele {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 66px;
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+          }
+        }
+      }
+      .bwModalShareContent-btnWrapper {
+        &-btn {
+          width: 326px;
+          height: 80px;
+          background: transparent;
+          background-image: url("https://tsla.bowuyoudao.com/weapp/img/lx-save-hb.png");
+          background-size: 100%;
+          background-repeat: no-repeat;
+          border: none;
+          color: $inviteColor;
+          font-weight: bold;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+  // 改版提现位置
+  &-tx {
+    box-sizing: border-box;
+    padding: 24px 32px 29px  43px;
+    margin-top: 12px;
+    overflow: hidden;
+    width: 638px;
+    height: 154px;
+    margin-left: 56px;
+    background-image: url('https://tsla.bowuyoudao.com/weapp/img/bw-lx-tx-bg1.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &-title{
+      color: $txColor;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    &-info{
+      margin-top: px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-action{
+        color: $txColor;
+        display: flex;
+        &-sym{
+          font-size: 32px;
+          font-weight: 500;
+          // vertical-align: top;
+          margin-top: 28px;
+        }
+        &-num{
+          font-size: 60px;
+          font-weight: 500;
+          // line-height: 0;
+          
+        }
+      }
+      &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 55px;
+        margin-top: -40px;
+        background-image: url('https://tsla.bowuyoudao.com/weapp/img/lxBtnBg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-size: 26px;
+        font-weight: 500;
+        color: $txColor;
+        &:active{
+          opacity: .6;
+        }
+      }
+      &-btnDis{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 183px;
+        height: 59px;
+        background-image: url('https://tsla.bowuyoudao.com/weapp/img/lxDisBtn.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-size: 26px;
+        font-weight: 500;
+        color: #776060;
+        &:active{
+          opacity: .6;
+        }
+      }
+    }
+  }
+  &-free{
+    margin-top: 16px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    // margin-left: 24px;
+    width: 702px;
+    height: 70px;
+    &-img{
+      width: 702px;
+      height: 70px;
+    }
+   
+  }
+}
+
+.bw-ScrollView-lx {
+  height: 100vh;
+}
+
+.bw-lx-box-tabs-content-list-invitem {
+  font-size: 26px;
+  color: #000;
+  margin-top: 40px;
+  box-sizing: border-box;
+  height: 100px;
+  display: flex;
+
+  &-img {
+    width: 96px;
+    height: 96px;
+    margin-right: 33px;
+    &-ele {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+    }
+  }
+  &-user {
+    line-height: 50px;
+  }
+}
+
+.lx-status-box {
+  width: 100%;
+  height: 100vh;
+
+  &-img {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.lx-end-Modal {
+  // background-color: #fff;
+}
+
+// 需求过期
+.lx-modal {
+  .Bw-Modal-box {
+    box-sizing: border-box !important;
+    // min-height: 508px;
+    width: 551px;
+    background: linear-gradient(0deg, #ea573b, #d81124);
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+  .Bw-Modal-box-title {
+    color: #fed597 !important;
+    font-weight: 400;
+  }
+  .Bw-Modal-box-content {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.bw-lx-modal{
+  .at-curtain{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .at-curtain__body{
+    width: 574px;
+    height: 485px;
+  }
+  &-content{
+    width: 574px;
+    height: 485px;
+    border-radius: 8px;
+    overflow: hidden;
+    &-head{
+      width: 574px;
+      height: 301px;
+      overflow: hidden;
+     background: url('https://tsla.bowuyoudao.com/weapp/img/lxTxModalBg.png');
+     background-repeat: no-repeat;
+     background-size: 100%, 100%;
+     &-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 52px;
+      color: #fff;
+      font-size: 36px;
+      font-weight: 500;
+     }
+     &-moneyInfo{
+      color: #fff;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+       &-sym{
+         font-size: 32px;
+         margin-top: 30px;
+         
+       }
+       &-num{
+         font-size: 72px;
+
+       }
+     }
+     &-tip{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       opacity: .5;
+       font-size: 24px;
+       font-weight: 500;
+       color: #fff;
+     }
+    }
+    &-bottom{
+      height: 200px;
+      background-color: #fff;
+      overflow: hidden;
+      &-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 277px;
+        height: 83px;
+        margin-top: 28px;
+        background: transparent;
+        background-image: url("https://tsla.bowuyoudao.com/weapp/img/txBtn.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border: none;
+        color: $txColor;
+        font-weight: bold;
+      }
+      &-tip{
+        margin-top: 24px;
+        text-align: center;
+        color: #999;
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+.bw-lx-modalfuli{
+  .at-curtain{
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .at-curtain__body{
+    width: 530px;
+    height: 660px;
+  }
+  &-fuliPic{
+    width: 530px;
+    height: 660px;
+    // width: 1060px;
+    // height: 1320px;
+    &-img{
+      width: 530px;
+      height: 660px;
+    }
+  }
+}
+
+.lx-modal-merchant{
+  position: relative;
+  .Bw-Modal-box{
+    width: 574px;
+    height: 357px;
+   
+  }
+  .Bw-Modal-box-content{
+    color: #6A6A6A;
+    font-size: 32px;
+  }
+  .Bw-Modal-box-title{
+    color: $txColor !important;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .Bw-Modal-confirm-btn{
+    width: 277px;
+    height: 83px;
+    color: $txColor;
+    background: url('https://tsla.bowuyoudao.com/weapp/img/wxtsBtn.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: none;
+  }
+  &-bg{
+    position: absolute;
+    width: 350px;
+    height: 136px;
+    top: -136px;
+    right: calc(50% - 175px);
+  }
+  .Bw-Modal-box-close{
+    display: none;
+  }
+}

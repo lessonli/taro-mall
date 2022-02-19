@@ -1,0 +1,160 @@
+.orderDispatchpage {
+  overflow-y: scroll;
+  // margin-bottom: 120px;
+
+  &-bianhao {
+    width: 100%;
+    .at-input {
+      width: scale(100% - 40);
+    }
+  }
+
+  &-c {
+    padding-bottom: 60px;
+    &-productwrap {
+      background-color: $white;
+      // padding: 24px 32px;
+      font-size: $fz24;
+    }
+    &-product {
+      
+      display: flex;
+      // align-items: center;
+      // padding-bottom: 24px;
+      padding: 24px 32px;
+      margin-bottom: 12px;
+      color: #666666;
+
+      &-pay {
+        border-top: 1px solid #eee;
+        padding: 12px 32px;
+      }
+
+
+      &-icon {
+        flex: 0 0 180px;
+        height: 180px;
+        margin-right: 16px;
+        border-radius: 4px;
+      }
+
+      &-content {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        &-name {
+          @include line-clamp(2);
+          font-size: $fz28;
+        }
+      }
+
+    }
+  }
+  .OrderGoodCard {
+    margin-top: 0;
+  }
+
+  &-card {
+    font-size: $fz28;
+    padding: $fz24;
+
+    .ListItem:last-child {
+      border-bottom: 0px;
+    }
+
+    &--title {
+      color: $color999;
+      margin-bottom: 16px;
+    }
+
+    &--content {
+      background-color: $white;
+      color: $fontColor;
+      border-radius: 8px;
+      overflow: hidden;
+
+      &-saomiao {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &-addr {
+      display: flex;
+      justify-content: space-between;
+      padding: 32px 24px;
+      align-items: center;
+
+      &-l {
+        flex: 0 0 80%;
+        &-1 {
+          &-phone {
+            margin-left: $fz24;
+            color: $color999;
+          }
+        }
+        &-2 {
+          margin-top: 24px;
+        }
+      }
+      &-r {
+        flex: 1;
+      }
+    }
+  }
+
+  &-footer {
+    // position: fixed;
+    // bottom: 24px;
+    // left: 24px;
+    // right: 24px;
+    padding: 0 24px;
+
+  }
+}
+
+.fahuoconfirm {
+  text-align: left;
+
+  &-product {
+    display: flex;
+    align-items: center;
+    background: #F7F7F7;
+    margin-bottom: 32px;
+
+    &-icon {
+      flex: 0 0 128px;
+      height: 128px;
+    }
+
+    &-detail {
+      flex: 1;
+      margin-left: 16px;
+
+      &-name {
+        color: #666666;
+        font-size: $fz28;
+        @include line-clamp(1);
+      }
+
+      &-prices {
+        color: $color999;
+        font-size: 24px;
+      }
+    }
+
+  }
+
+  &-item {
+    margin-top: 16px;
+    color: $color999;
+    font-size: 28px;
+
+    &-v {
+      color: #666666;
+    }
+  }
+
+}

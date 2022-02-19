@@ -1,0 +1,107 @@
+
+
+.SetPayPassword{
+  // padding: 24px;
+  margin-top: 24px;
+  // background-color: #fff;
+  .at-input .at-input__input {
+    text-align: left;
+  }
+  
+  .SetPayPassword-form-item{
+    border-bottom: 1px solid #EEE;
+    height: 108px;
+    display: flex;
+    align-items: center;
+
+    &-label{
+      color: #333333;
+      font-size: 32px;
+      margin-right: 60px;
+      padding-left: 24px;
+    }
+    &-value{
+      color: #333333;
+      font-size: 32px;
+    }
+    &-yzm{
+      color: #AA1612;
+      box-sizing: border-box;
+      width: 170px;
+      height: 52px;
+      border-radius: 8px;
+      border: 1px solid rgba(170, 22, 18, 0.5);
+      font-size: 26px;
+      line-height: 52px;
+      text-align: center;
+    }
+    &-yzmActive{
+      color: #AA1612;
+      box-sizing: border-box;
+      width: 170px;
+      height: 52px;
+      border-radius: 8px;
+      border: 1px solid #BDBDBD;
+      font-size: 26px;
+      line-height: 52px;
+      text-align: center;
+    }
+  }
+}
+.SetPayPassword-payPassword-btn{
+  margin-top: 60px;
+}
+
+.SetPayPassword-b-b{
+  border-bottom: 1px solid #EEE !important;
+}
+.SetPayPassword-form-item-no-b{
+  border-bottom: none !important;
+}
+
+
+.bw-password-yzm{
+    border-bottom: 1px solid #EEE;
+    height: 108px;
+    display: flex;
+    padding-right: 24px;
+    justify-content: space-between;
+    align-items: center;
+    &-label{
+      color: #333333;
+      font-size: 32px;
+      min-width: 100px;
+      margin-right: 48px;
+      padding-left: 24px;
+    }
+    &-value{
+      color: #BDBDBD;
+      font-size: 32px;
+      border: none;
+      max-width: 300px;
+      &:focus{
+        border: none !important;
+        outline: none !important;
+      }
+      &:focus-visible{
+      //  border: none !important;
+      border: none !important;
+      outline: none !important;
+
+      }
+      &:-moz-focus-visibl{
+        border: none !important;
+        outline: none !important;
+      }
+      &:-ms-focus-visibl{
+        border: none !important;
+        outline: none !important;
+      }
+      &:-webkit-focus-visibl{
+        border: none !important;
+        outline: none !important;
+      }
+
+      
+    }
+}

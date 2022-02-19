@@ -1,0 +1,77 @@
+.Evaluate {
+  padding: 0 32px 25px 32px;
+  background: $white;
+
+  .Evaluate-top-left {
+    display: flex;
+    align-items: center;
+  }
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 128px;
+
+    &-head {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+
+    &-info {
+      margin-left: 16px;
+      display: inline-block;
+      vertical-align: top;
+
+      &-name {
+        font-weight: 500;
+        color: #333333;
+        font-size: $fz30;
+        line-height: 42px;
+        max-width: 330px;
+        @include line-clamp(1)
+      }
+
+      &-score {
+
+        .Stars {
+          height: 24px;
+          margin-top: 6px;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+          float: left;
+        }
+      }
+    }
+
+    &-time {
+      font-size: $fz24;
+      color: #999999;
+    }
+  }
+
+  &-text {
+    color: #666666;
+    font-size: 30px;
+  }
+
+  &-img {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 17px;
+
+    &-icon {
+      width: 144px;
+      height: 144px;
+      margin-bottom: 17px;
+      margin-right: 16px;
+    }
+
+  }
+}

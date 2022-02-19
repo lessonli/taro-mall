@@ -1,0 +1,84 @@
+.selectGoodsUserItem {
+  width: 702px;
+  height: 272px;
+  box-sizing: border-box;
+  display: flex;
+  
+  padding: 16px 16px;
+  margin-top: 24px;
+  background: #fff;
+  &-left {
+    &-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 8px;
+    }
+  }
+  &-right {
+    margin-left: 16px;
+    width: 420px;
+    &-name {
+      font-weight: 500;
+      color: #333333;
+      font-size: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &-tag {
+      color: #bd883e;
+      font-size: 26px;
+    }
+    &-price {
+      display: flex;
+      
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 38px;
+      &-info {
+        &-num {
+          &-price {
+            &-icon {
+              font-size: 24px;
+              color: #aa1612;
+              font-weight: 500;
+            }
+            &-num {
+              font-size: 40px;
+              font-weight: 500;
+              color: #aa1612;
+            }
+            &-originPrice {
+              font-weight: 400;
+              color: #999;
+              font-size: 24px;
+              text-decoration: line-through;
+              margin-left: 8px;
+            }
+          }
+        }
+        &-history{
+          color: #999;
+          font-size: 24px;
+          line-height: 20px;
+        }
+      }
+      &-buy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-top: 20px;
+        width: 160px;
+        height: 78px;
+        background: #AA1612;
+        border-radius: 8px;
+        background: #AA1612;
+        font-size: 28px;
+        color: #fff;
+        
+        
+      }
+    }
+  }
+}

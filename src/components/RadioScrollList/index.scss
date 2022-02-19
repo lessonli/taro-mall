@@ -1,0 +1,16 @@
+.bwRadioItem {
+  display: flex;
+  justify-content: space-between;
+  height: 96px;
+  align-items: center;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  color: #333333;
+  font-size: 32px;
+
+  &__checked {
+    color: $color-primary;
+    font-size: 32px;
+  }
+}

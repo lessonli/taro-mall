@@ -1,0 +1,68 @@
+
+
+$hightRedColor:#D63E27;
+.redPacket-send{
+  .bw-list-item{
+    height: 134px;
+  }
+  &-list{
+    margin-top: 24px;
+    &-right{
+      // display: flex;
+      text-align: right;
+      color: #999;
+      font-size: 24px;
+      &-money{
+        font-size: 32px;
+        font-weight: 600;
+        color: #333;
+      }
+      .rightTextColor{
+        color: #C19529;
+      }
+
+    }
+    &-left{
+      font-size: 32px;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-imgBox{
+        width: 69px;
+        height: 84px;
+        &-img{
+          width: 69px;
+          height: 84px;
+          border-radius: 8px;
+        }
+      }
+      &-text{
+        margin-left: 24px;
+        &-name{
+          color: #333;
+          font-size: 32px;
+        }
+        &-time{
+          color: #999;
+          font-size: 24px;
+        }
+      }
+      &-count{
+        font-size: 24px;
+      }
+      &-text{
+        font-size: 24px;
+        color: #999;
+      }
+    }
+  }
+
+  .redColor{
+    color: $hightRedColor;
+  }
+}
+
+.redPacket-send-scrollview{
+  height: 100vh;
+}

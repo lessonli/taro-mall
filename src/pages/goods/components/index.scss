@@ -1,0 +1,492 @@
+.EarnestRules {
+  width: 686px;
+  // height: 360px;
+  color: #666666;
+  line-height: 40px;
+  font-size: $fz28;
+  margin: auto;
+  padding: 32px;
+
+  &-content {
+    overflow: hidden;
+
+    p {
+      color: #666666;
+      margin-bottom: 32px;
+
+    }
+
+    margin-bottom: 43px;
+  }
+}
+
+.AuctionRules {
+  width: 686px;
+  // height: 360px;
+  color: #666666;
+  line-height: 40px;
+  font-size: $fz28;
+  margin: auto;
+  padding: 32px;
+
+  &-content {
+    overflow-y: scroll;
+    height: 700px;
+    margin-bottom: 16px;
+
+    &-item {
+      margin-top: 32px;
+
+      &-title {
+        margin-bottom: 16px;
+        font-weight: 600;
+        color: #333333;
+        font-size: $fz32;
+      }
+
+      &-matter {
+        color: #999999;
+        line-height: 40px;
+        font-size: $fz28;
+      }
+    }
+  }
+}
+
+.AuctionRecordList {
+  padding: 32px;
+
+  &-content {
+    overflow-y: scroll;
+    max-height: 700px;
+    margin-bottom: 16px;
+  }
+}
+
+.AuctionList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-info {
+    height: 104px;
+    display: flex;
+    align-items: center;
+    width: 520px;
+    justify-content: space-between;
+
+    &-detail {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &-headImg {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+
+      &-content {
+        margin-left: 16px;
+
+        .name {
+          height: 40px;
+
+          span {
+            font-weight: 500;
+            width: 250px;
+            color: #333333;
+            line-height: 40px;
+            font-size: $fz28;
+            display: inline-block;
+            vertical-align: top;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+          }
+
+          img {
+            width: 46px;
+            height: 28px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 8px;
+            margin-top: 6px;
+          }
+        }
+
+        .time {
+          font-size: $fz24;
+          color: #999999;
+          line-height: 33px;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    &-price {
+      font-size: 36px;
+      color: $checked;
+      font-weight: 600;
+    }
+  }
+
+  &-status {
+    width: 85px;
+    height: 44px;
+  }
+}
+
+.SubmitButton-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0 32px;
+  display: flex;
+  height: 128px;
+  background: #fff;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+
+  &-item {
+    margin-right: 54px;
+
+    img {
+      width: 50px;
+      height: 50px;
+      display: block;
+    }
+
+    p {
+      font-size: 22px;
+      color: #666666;
+      line-height: 22px;
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+
+  &-btn {
+    width: 486px;
+    height: 98px;
+    background: #AA1612;
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 98px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  &-btn2 {
+    height: 98px;
+    font-size: 36px;
+    line-height: 98px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+
+    &-left {
+      width: 243px;
+      height: 98px;
+      background: #C59354;
+      border-radius: 8px 0px 0px 8px;
+      float: left;
+
+    }
+
+    &-left1 {
+      width: 243px;
+      height: 98px;
+      background: #C59354;
+      border-radius: 8px 0px 0px 8px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .p1 {
+        line-height: 32px;
+      }
+
+      .p2 {
+        font-size: 24px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 0.65);
+        margin-top: 6px;
+      }
+    }
+
+    &-right {
+      width: 243px;
+      height: 98px;
+      background: #AA1612;
+      border-radius: 0px 8px 8px 0px;
+      float: left;
+    }
+
+
+    &-right2 {
+      width: 243px;
+      height: 98px;
+      background: #AA1612;
+      border-radius: 0px 8px 8px 0px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .p1 {
+      line-height: 32px;
+    }
+
+    .p2 {
+      font-size: 24px;
+      line-height: 24px;
+      color: rgba(255, 255, 255, 0.65);
+      margin-top: 6px;
+    }
+  }
+
+  &-longBtn {
+    width: 587px;
+    height: 98px;
+    background: #AA1612;
+    border-radius: 8px;
+    font-size: 36px;
+    line-height: 98px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  .disabled {
+    background: #AA1612;
+    opacity: 0.3;
+  }
+}
+
+.bw-Bidding {
+  padding: 0 32px 24px 32px;
+
+  &-title {
+    text-align: center;
+    font-size: 26px;
+    color: #333333;
+  }
+
+  &-now {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333333;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .fz60 {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 78px;
+    margin-bottom: 32px;
+    position: relative;
+
+    &-tips {
+      font-size: 40px;
+      color: #964400;
+      line-height: 56px;
+      // height: 28px;
+      position: absolute;
+      left: 292px;
+      top: -42px;
+      background: linear-gradient(90deg, rgba(255, 227, 178, .5) 0%, rgba(246, 145, 37, .5) 100%);
+      border-radius: 8px 8px 8px 8px;
+      // opacity: 0.5;
+      display: block;
+      padding: 0px 16px;
+      transform: scale(.5);
+      transform-origin: 0;
+    }
+
+    &-item {
+      width: 212px;
+      padding: 35px 0;
+      display: block;
+      background: #F7F7F7;
+      border-radius: 8px;
+      font-size: 32px;
+      color: #333333;
+      text-align: center;
+      line-height: 32px;
+      overflow: hidden;
+
+
+      // line-height: 103px;
+    }
+
+    .active {
+      width: 212px;
+
+      background: rgba(170, 22, 18, 0.08);
+      border-radius: 8px;
+      color: #AA1612;
+    }
+  }
+}
+
+.shoppingCar {
+  &-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 32px;
+    position: relative;
+
+    &-img {
+      width: 180px;
+      height: 180px;
+    }
+
+    &-content {
+      margin-left: 16px;
+      vertical-align: top;
+
+      &-title {
+        font-size: 30px;
+        font-weight: 500;
+        color: #333333;
+        line-height: 42px;
+        @include line-clamp(2);
+      }
+
+      &-price {
+        font-weight: 500;
+        color: #AA1612;
+        line-height: 32px;
+        margin-top: 16px;
+      }
+
+      &-kc {
+        font-size: 24px;
+        color: #999999;
+        line-height: 24px;
+        position: absolute;
+        left: 228px;
+        bottom: 32px;
+      }
+    }
+
+  }
+
+  &-num {
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+
+    .at-input-number {
+      width: 278px;
+      height: 78px;
+      line-height: 80px;
+
+      .at-input-number__btn {
+        width: 80px;
+      }
+
+      .at-input-number__input {
+        line-height: 78px;
+        border: none;
+      }
+    }
+  }
+
+  &-btn {
+    padding: 0 32px 32px 32px;
+  }
+}
+
+
+.bw-couponList {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+
+  &-left {
+    overflow-x: scroll;
+    width: 500px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    &-item {
+      background: #FFF4F1;
+      line-height: 40px;
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #AA1612;
+      padding: 0 12px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+  }
+
+  &-right {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &-1 {
+      font-size: 26px;
+      color: #AA1612;
+      margin-right: 16px;
+    }
+
+    &-2 {
+      font-size: 26px;
+      color: #AA1612;
+    }
+  }
+
+  &-content {
+    padding: 0 24px;
+    padding-bottom: 24px;
+
+    &-scroll {
+      height: 800px;
+      overflow-y: scroll;
+    }
+
+    &-get {
+      width: 136px;
+      height: 53px;
+      background: #FFFFFF;
+      border-radius: 7px;
+      border: 1px solid rgba(170, 22, 18, 0.5);
+      font-size: 26px;
+      color: #EA3131;
+      text-align: center;
+      line-height: 53px;
+    }
+
+    .geted {
+      background: #FFF4F1;
+      border: 1px solid rgba(170, 22, 18);
+      opacity: .3;
+    }
+  }
+}

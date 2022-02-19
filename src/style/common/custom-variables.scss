@@ -1,0 +1,8 @@
+$color-brand: #AA1612 !default;
+// $at-button-height-sm: 56px !default;
+
+/* 边框颜色 */
+$color-border-base: $bgColorBd !default;
+
+/* 引入 Taro UI 默认样式 */
+@import "~taro-ui/dist/style/index.scss";

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="width=device-width,initial-scale=1,user-scalable=no, viewport-fit=cover" name="viewport">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="format-detection" content="telephone=no,address=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+  <link href="https://tsla.bowuyoudao.com/weapp/img/favicon.ico" rel="shortcut icon">
+  <title>博物有道</title>
+  <script>
+    !function(x){function w(){var v,u,t,tes,s=x.document,r=s.documentElement,a=r.getBoundingClientRect().width;if(!v&&!u){var n=!!x.navigator.appVersion.match(/AppleWebKit.*Mobile.*/);v=x.devicePixelRatio;tes=x.devicePixelRatio;v=n?v:1,u=1/v}if(a>=640){r.style.fontSize="40px"}else{if(a<=320){r.style.fontSize="20px"}else{r.style.fontSize=a/320*20+"px"}}}x.addEventListener("resize",function(){w()});w()}(window);
+  </script>
+  <script src="https://tsla.bowuyoudao.com/npm/assets-retry/assets-retry.umd.js"></script>
+  <script>
+    const locationOrg = location.origin
+    var assetsRetryStatistics = window.assetsRetry({
+      // 域名列表，只有在域名列表中的资源，才会被重试
+      domain: ['tsla.bowuyoudao.com', 'tsla-light.oss-cn-hangzhou.aliyuncs.com', 'h5.bowuyoudao.com'],
+      // domain: ['dev.bowuyoudao.com', 'tsla.bowuyoudao.com'],
+      // 可选，最大重试次数，默认 3 次
+      maxRetryCount: 3,
+      // 可选，通过该参数可自定义 URL 的转换方式
+      onRetry: function(currentUrl, originalUrl, statistics) {
+        if (originalUrl === window.location.href) return null
+        if (!currentUrl) return null
+        return currentUrl.replace('h5.bowuyoudao.com/h5-assets', 'h5.bowuyoudao.com')
+      },
+      // 对于给定资源，要么调用 onSuccess ，要么调用 onFail，标识其最终的加载状态
+      // 加载详细信息（成功的 URL、失败的 URL 列表、重试次数）
+      // 可以通过访问 assetsRetryStatistics[currentUrl] 来获取
+      onSuccess: function(currentUrl) {
+        if (assetsRetryStatistics[currentUrl] && assetsRetryStatistics[currentUrl].retryTimes > 0) {
+          console.log('资源重试 success =>>>>', currentUrl, assetsRetryStatistics[currentUrl])
+          window.catchToSentry && window.catchToSentry({
+            exceptionName: 'assets_retry_success',
+            RETRY_TIMES: assetsRetryStatistics[currentUrl] && assetsRetryStatistics[currentUrl].retryTimes,
+            errs: null,
+            value: JSON.stringify(assetsRetryStatistics[currentUrl] || {})
+          })
+        }
+      },
+      onFail: function(currentUrl) {
+        const a = locationOrg + currentUrl
+        if (a !== location.href && assetsRetryStatistics[currentUrl] && assetsRetryStatistics[currentUrl].retryTimes > 0) {
+          console.log('资源重试 fail =>>', currentUrl, assetsRetryStatistics[currentUrl])
+          window.catchToSentry && window.catchToSentry({
+            exceptionName: 'assets_retry_fail',
+            RETRY_TIMES: assetsRetryStatistics[currentUrl] && assetsRetryStatistics[currentUrl].retryTimes,
+            errs: null,
+            value: JSON.stringify(assetsRetryStatistics[currentUrl] || {})
+          })
+        }
+      }
+  })
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>

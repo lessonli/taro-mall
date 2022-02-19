@@ -1,0 +1,135 @@
+.openRed {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  background-color: rgba(125,125,125,.7);
+  background-color: #f25542;
+  width: 100%;
+  background-image: url(https://tsla.bowuyoudao.com/weapp/img/openRedPacketBg.png);
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  &-img {
+    width: 100%;
+    height: 1324px;
+
+    &-ele {
+      width: 100%;
+      height: 1324px;
+    }
+    &-text {
+      position: absolute;
+      width: 100%;
+      top: 83px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      &-con {
+        font-size: 30px;
+        color: #faeecb;
+        font-weight: 500;
+        margin-top: 80px;
+        &-img {
+          // margin-top: -6px;
+          width: 48px;
+          height: 48px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.openRed-curtain {
+  .bw-popup__container {
+   height: 100%;
+    background: none;
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 471px);
+    left: calc(50% - 320px);
+    animation: rotateplane 1.4s 1;
+
+    &-img {
+      width: 640px;
+      height: 942px;
+    }
+    &-openImg {
+      width: 204px;
+      height: 204px;
+      position: absolute;
+      top: 62%;
+      animation: scaleDraw 2s infinite;
+      animation-delay: 1.4s; 
+    }
+    &-shopInfo {
+      position: absolute;
+      top: 112px;
+      color: #fddeb2;
+      font-size: 32px;
+      &-shopName {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    &-tip {
+      position: absolute;
+      top: 254px;
+      width: 490px;
+      text-align: center;
+      color: #fddeb2;
+      font-size: 46px;
+      line-height: 65px;
+    }
+  }
+  .at-curtain__btn-close {
+    display: none;
+  }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(179.9deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+  // 75% {
+  //   transform: rotateY(179.9deg);
+
+  // }
+  // 100% {
+  //   transform: rotateY(0);
+
+  // }
+}
+
+@keyframes scaleDraw {
+  /*定义关键帧、scaleDrew关键帧名称*/
+  0% {
+    transform: scale(1); /*开始为原始大小*/
+  }
+  25% {
+    transform: scale(1.2); /*放大1.1倍*/
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

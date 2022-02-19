@@ -1,0 +1,31 @@
+.PayAssuranceFeeModal {
+  padding: 32px;
+
+  &-content {
+    margin: 32px 0;
+    font-size: $fz32;
+    
+    &__item {
+      width: 158px;
+      height: 103px;
+      line-height: 103px;
+      margin-bottom: 18px;
+      margin-right: 18px;
+      display: inline-block;
+      box-sizing: border-box;
+      background: #F7F7F7;
+      border-radius: 8px;
+      color: $fontColor;
+      text-align: center;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+      &-active {
+        background: rgba(170, 22, 18, 0.08);
+        color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+
+.accountBalance{
+	width: 100%;
+	box-sizing: border-box;
+    padding: 0 24px;
+
+		&-intaion {
+			position: absolute;
+			bottom: 8px;
+			left: -20px;
+			// color: #fff;
+			transform: scale(0.8);
+		}
+    &-bg{
+			margin-top: 24px;
+      height: 184px;
+			box-sizing: border-box;
+			padding: 0 40px 0px 32px;
+      background-color: #AA1612;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+			position: relative;
+      &-account{
+				color: #fff;
+				&-text{
+					opacity: .75;
+				
+					font-size: 26px;
+				}
+				&-num{
+					font-size: 48px;
+				}
+      }
+			&-add{
+				//  入口 暂时隐藏处理
+				display: block;
+				color: #fff;
+				font-size: 28px;
+				width: 114px;
+				height: 52px;
+				text-align: center;
+				line-height: 52px;
+				border: 1px solid #fff;
+				border-radius: 8px;
+			}
+    }
+
+
+		.at-input__input{
+			text-align: center;
+		}
+
+}
+.accountBalance-list-left{
+	height: 140px;
+	padding-top: 32px;
+	box-sizing: border-box;
+	&-text{
+		color: #333333;
+		font-size: 32px;
+	}
+	&-date{
+		margin-top: 5px;
+		color: #999999;
+		font-size: 24px;
+	}
+}
+
+.accountBalance-list-add{
+	color: #AA1612;
+	font-size: 32px;
+}
+
+.accountBalance-list-sub{
+	color: #333333;
+	font-size: 32px;
+}
+
+.accountBalanceScrollview{
+	height: calc(100% - 295px);
+}

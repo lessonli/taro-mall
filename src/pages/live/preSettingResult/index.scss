@@ -1,0 +1,88 @@
+.preSettingResult {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // background-origin: ;
+
+  &-content {
+    position: absolute;
+    // z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  &-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 120px;
+    border: 1px solid #999999;
+  }
+
+  &-title {
+    color: #C8A881;
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+
+  &-countDown {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    &-t {
+      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 60px;
+    }
+
+    &-unit {
+      margin-left: 12px;
+      margin-right: 26px;
+      position: relative;
+      top: -12px;
+    }
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 24px;
+    &-1 {
+      display: flex;
+      justify-content: space-around;
+      &-item {
+        &-icon {
+          width: 54px;
+          height: 54px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    &-2 {
+      display: flex;
+      margin-top: 24px;
+      &-btn {
+        flex: 0 0 45%;
+        &_edit {
+          background-color: transparent !important;
+          border-color: #BDBDBD;
+          color: #fff;
+        }
+
+        &_share {
+          background-color: #C8A881;
+          border: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

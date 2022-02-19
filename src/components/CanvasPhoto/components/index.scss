@@ -1,0 +1,84 @@
+.CanvasPhoto-bottom {
+  height: 449px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $white;
+
+  &-tips {
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &-operation {
+    box-sizing: border-box;
+    padding: 0 50px;
+    margin-top: 156px;
+    height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      position: relative;
+
+      &-img {
+        width: 100px;
+        height: 100px;
+        background: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+
+      }
+
+      &-btn {
+        width: 100px;
+        height: 100px;
+        background: #F5F5F5;
+        border-radius: 50%;
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+      }
+
+      img {
+        display: block;
+        width: 56px;
+        height: 56px;
+        margin: auto;
+      }
+
+      p {
+        height: 37px;
+        line-height: 37px;
+        font-size: 26px;
+        font-weight: 400;
+        color: #666666;
+        margin-top: 12px;
+        text-align: center;
+      }
+    }
+  }
+
+  &-around {
+    justify-content: space-around;
+  }
+
+  &-cancel {
+    height: 97px;
+    line-height: 97px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 400;
+    color: #333333;
+    border-top: 1px solid #eee;
+  }
+}

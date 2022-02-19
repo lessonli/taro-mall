@@ -1,0 +1,71 @@
+.bw-template-doubleRow {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 343px;
+  // height: 545px;
+  margin-top: 24px;
+  &:nth-of-type(1){
+    margin-top: 0;
+  }
+  &:nth-of-type(2){
+    margin-top: 0;
+  }
+
+  &-headImg {
+    width: 343px;
+    height: 343px;
+    &-img {
+      width: 343px;
+      height: 343px;
+      // border-radius: 8px;
+    }
+  }
+  &-info{
+    background-color: #fff;
+    padding: 0 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    &-title{
+      // 当使用 view 标签 做单行省略的话 会 出现兼容问题
+      // display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      
+      margin-top: 16px;
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 28px;
+    }
+    &-price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-subsidy{
+        position: relative;
+        padding: 0 5px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        text-align: center;
+        width: 141px;
+        height: 40px;
+        line-height: 45px;
+        background: linear-gradient(90deg, rgb(255,227,178,.5) 0%, rgb(246,145,37,.5) 100%);
+        border-radius: 8px;
+        color: #AA4E00;
+        font-size: 22px;
+      //  &:after{
+      //   position: absolute;
+      //   left: 20px;
+      //   bottom: -9px;
+      //   content: '';
+       
+      //   border-left: 10px solid transparent;
+      //   border-right: 10px solid transparent;
+      //   border-top: 10px solid #fbce9c;
+      //   // opacity: .5;
+      //  }
+      }
+    }
+  }
+}

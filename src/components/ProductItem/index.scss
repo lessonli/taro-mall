@@ -1,0 +1,90 @@
+.OneRowDoubleColumnProductItem {
+  display: inline-block;
+  width: 343px;
+  background: #fff;
+  margin-bottom: 16px;
+  vertical-align: top;
+  border-radius: 8px;
+  overflow: hidden;
+
+  &_sample {
+    height: 467px;
+  }
+
+  &:nth-child(2n) {
+    margin-left: 16px;
+  }
+
+  &-icon {
+    height: 100%;
+    width: 100%;
+
+    &-wrapper {
+      // 默认高度
+      height: 343px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+  &-earns {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    transform: scale(0.5, 0.5);
+
+    &-content {
+      position: absolute;
+      bottom: 24px;
+      left: -140px;
+      background: #feefde;
+      color: #9c6538;
+      display: flex;
+      align-items: center;
+      border-radius: 16px;
+      overflow: hidden;
+
+    }
+
+    &-icon {
+      width: 76px;
+      height: 64px;
+    }
+
+    &-text {
+      font-size: 48px;
+      height: 64px;
+      line-height: 64px;
+      display: inline-block;
+      font-weight: 500;
+
+    }
+  }
+
+  &-footer {
+    padding: 16px;
+    box-sizing: border-box;
+    height: 130px;
+
+    &-title {
+      color: rgba(0, 0, 0, 0.85);
+      @include line-clamp-1;
+      font-weight: 600;
+    }
+
+    &-desc {
+      margin-top: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+
+      &-price {
+        display: table-cell;
+        vertical-align: bottom;
+        font-weight: 600;
+      }
+    }
+  }
+}

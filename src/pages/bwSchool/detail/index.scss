@@ -1,0 +1,23 @@
+
+
+.bw-schoolDetail{
+  background-color: #fff;
+  padding: 32px;
+
+  &-title{
+    color: #333333;
+    font-size: 32px;
+  }
+  &-date{
+    color: #999999;
+    font-size: 28px;
+    margin-top: 16px;
+  }
+}
+.bw-schoolDetail-detail-richText{
+  img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}

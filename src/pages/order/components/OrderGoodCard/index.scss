@@ -1,0 +1,226 @@
+.OrderGoodCard {
+  margin-top: 24px;
+  background-color: $white;
+  font-size: $fz28;
+
+  &_mallname {
+    padding: 24px 32px;
+    color: $fontColor;
+    font-size: $fz28;
+    border-bottom: 1px solid $colorEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-iconBox {
+      display: inline-flex;
+      align-items: center;
+      width: 300px;
+    }
+
+    &-icon {
+      // 
+      flex: 0 0 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 12px;
+      // display: inline-block;
+      // width: 32px;
+    }
+
+    &-text {
+      @include line-clamp(1);
+      // display: inline-block;
+    }
+
+  }
+
+  &_goodwrap {
+    padding: 24px 32px 0px 32px;
+  }
+
+  &_good {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $colorEEE;
+
+    &-icon {
+      flex: 0 0 180px;
+      height: 180px;
+      width: 180px;
+      border-radius: 8px;
+    }
+
+    &-d {
+      flex: 1;
+      margin-left: 16px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 180px;
+
+      &-name {
+        font-size: $fz28;
+        color: $tabColor;
+        @include line-clamp(2);
+      }
+
+    }
+  }
+
+  &_good-count {
+    font-size: $fz24;
+    text-align: right;
+    padding-top: 24px;
+    border-top: 1px solid $colorEEE;
+  }
+
+  .bbl {
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  &-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+
+    &-l {
+      text-align: left;
+      flex: 0 0 20%;
+    }
+
+    &-r {
+      margin-left: 32px;
+      flex: 1;
+      text-align: right;
+
+      .input-note {
+        height: 40px;
+        line-height: 40px;
+        font-size: 28px;
+
+        .weui-input::-webkit-input-placeholder {
+          font-size: 28px !important;
+        }
+      }
+    }
+  }
+
+}
+
+.OrderCodeCard {
+  margin-top: 24px;
+  // padding: 32px;
+  // padding-top: ;
+  background-color: $white;
+  font-size: $fz28;
+
+  &__title {
+    padding-top: 32px;
+    padding-left: 32px;
+    color: $fontColor;
+    font-size: $fz32;
+    font-weight: 500;
+  }
+
+  &-content {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+
+    &-item {
+      margin-top: 24px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: -14px;
+
+      &--note {
+        // margin-top: 12px;
+      }
+
+      &-1 {
+        // margin-bottom: -14px;
+      }
+
+      &__label {
+        flex: 0 0 26%;
+
+      }
+
+      &__text {
+        flex: 1;
+      }
+
+      // &--order-codewrap {
+      //   font-size: 0;
+      // }
+
+      &--order-code {
+        vertical-align: top;
+      }
+
+      .copy-btn-wrap {
+        position: relative;
+      }
+
+      .copy-btn {
+        position: absolute;
+        top: -22px;
+        left: 0;
+      }
+
+      .copy-btn-weapp {
+        top: -12px;
+      }
+    }
+  }
+
+  &-footer {
+    text-align: center;
+    border-top: 1px solid $colorEEE;
+    font-size: $fz30;
+    color: $tabColor;
+    padding: 24px;
+
+    .myIcon {
+      font-size: 32px;
+      margin-right: 12px;
+    }
+  }
+
+
+}
+
+
+.ExpressRecently {
+  display: flex;
+  background-color: $white;
+  padding: 32px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $colorEEE;
+  font-size: $fz28;
+
+  &-1 {
+    flex: 0 0 80%;
+    display: flex;
+    align-items: center;
+
+    &-car {
+      font-size: $fz28;
+      margin-right: 24px;
+    }
+
+    &-texts {
+      &-1 {
+        color: #C19529;
+        margin-bottom: 8px;
+        font-size: $fz30;
+        @include line-clamp(1);
+      }
+    }
+  }
+
+  &-next {
+    font-size: $fz32;
+  }
+}

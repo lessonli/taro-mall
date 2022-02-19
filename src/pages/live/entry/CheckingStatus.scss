@@ -1,0 +1,41 @@
+.liveChecking {
+  margin: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 60px;
+
+  &-status-icon {
+    font-size: 164px;
+  }
+
+  &-waiting {
+    color: rgb(227 150 73);
+  }
+
+  &-success {
+    color: rgb(29 172 25);
+  }
+
+  &-1 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  &-2 {
+    font-size: 26px;
+    color: $color999;
+  }
+
+  &-3 {
+    margin-top: 110px;
+    padding-bottom: 90px;
+
+    .at-button--secondary {
+      border: 1px solid rgba(170, 22, 18, 0.5);
+      width: 315px;
+    }
+  }
+}

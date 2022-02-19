@@ -1,0 +1,26 @@
+.redRules {
+  padding: 24px 24px;
+  &-title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333;
+  }
+  &-content {
+    margin-top: 24px;
+    font-size: 24px;
+    color: #000007;
+    &-title{  
+      margin-bottom: 24px;
+      margin-top: 24px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    &-com{
+
+      &-item{
+        // padding-left: 2px;
+      }
+    }
+  }
+}

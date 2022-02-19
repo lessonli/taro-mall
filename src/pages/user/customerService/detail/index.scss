@@ -1,0 +1,28 @@
+
+.bw-help-detail{
+  background: #fff;
+  min-height: 100vh;
+  padding: 0 24px;
+  font-size: 28px;
+  color: #666;
+  overflow: hidden;
+  &-tit{
+    font-size: 32px;
+    color: #333;
+    margin-top: 24px;
+    &-child{
+      white-space: pre-wrap;
+    }
+  }
+  &-con{
+    // text-indent: 24px;
+    white-space: pre-wrap;
+  }
+}
+.bw-help-detail-title{
+  margin-top: 24px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #333;
+}

@@ -1,0 +1,122 @@
+$float-layout-timer: 300ms;
+
+.bw-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: $zindex-popup;
+  transition: visibility $float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
+
+  &__overlay {
+    opacity: 0.5;
+    transition: opacity $float-layout-timer ease-in;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+    position: absolute;
+    background-color: rgba($color: #000, $alpha: 0.3);
+  }
+
+  &__container {
+    position: absolute;
+
+    &_bottom {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-height: 100%;
+      transform: translate3d(0, 100%, 0);
+      transition: transform $float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
+      background-color: $white;
+    }
+
+    &_center {
+      left: 50%;
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0) scale(1.2);
+  
+      width: 80%;
+      max-height: 100%;
+      opacity: 0;
+      transition: all $float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
+    }
+  }
+
+  .layout {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: $fz30;
+      padding: 0 32px;
+      border-bottom: 1px solid $colorEEE;
+      align-items: center;
+      box-sizing: border-box;
+      height: 109px;
+      line-height: 109px;
+
+      &__close-icon {
+        color: $color999;
+        font-size: 36px;
+        position: relative;
+        top: 6px;
+      }
+
+      &__cancel-btn {
+        color: $color999;
+      }
+
+      &__ok-btn {
+        color: $color-primary;
+      }
+
+      &__title {
+        color: $fontColor;
+        font-size: $fz32;
+      }
+    }
+  }
+
+  &--active {
+    visibility: visible;
+
+    .bw-popup__container_bottom {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+    .bw-popup__container_center {
+      transform: translate3d(-50%, -50%, 0) scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.pop-titleBox {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-title {
+    color: $fontColor;
+    font-size: $fz32;
+  }
+}
+
+.pop-rotation {
+  color: $fontColor;
+  font-size: $fz32;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 8px;
+}

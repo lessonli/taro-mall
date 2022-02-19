@@ -1,0 +1,105 @@
+.promote-doubleBox{
+  width: 750px;
+  height: 710px;
+  background-image: url('https://tsla.bowuyoudao.com/weapp/img/promote_double_bg.png');
+  background-repeat: no-repeat;
+  background-size: 750px, 802px;
+}
+.promote-double{
+  padding: 0 24px;
+  overflow: hidden;
+  &-baokuan{
+    width: 287px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 8px;
+    position: relative;
+    &-img{
+      position: absolute;
+      width: 287px;
+      height: 68px;
+      margin-top: 7px;
+    }
+    &-text{
+      width: 287px;
+      height: 68px;
+      position: absolute;
+      z-index: 2;
+      font-size: 32px;
+      line-height: 68px;
+      text-align: center;
+      background: linear-gradient(0deg, #EAC5A1 0%, #FFF3E6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 500;
+    }
+  }
+  &-goodsWraper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    margin-top: 47px;
+    
+   
+    &-item{
+      position: relative;
+      height: 595px;
+    
+      &-border{
+        position: absolute;
+        top: 0;
+        width: 318px;
+        height: 318px;
+        z-index: 33;
+        overflow: hidden;
+        
+      }
+      &-goods{
+        // position: absolute;
+        width: 315px;
+        height: 315px;
+       
+      }
+      &-goodsName{
+        margin-top: 18px;
+        text-align: center;
+        margin: 0 auto;
+        width: 295px;
+        color: #BB3E32;
+        font-size: 32px;
+        font-weight: 500;
+        @include sl;
+      }
+      &-goodsprice{
+        font-size: 32px;
+        margin: 0 auto;
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 312px;
+        height: 89px;
+        text-align: center;
+        background: url('https://tsla.bowuyoudao.com/weapp/img/promote_double_btn.png') no-repeat;
+        background-size: 312px 89px;
+        color: #FFFFFF;
+        &:active{
+          opacity: .5;
+        }
+      }
+      &-retail{
+        line-height: 89px;
+        margin: 16px auto 0  auto;
+        width: 215px;
+        height: 68px;
+        background: rgb(159,28,33, 0.09);
+        font-size: 24px;
+        border-radius: 34px;
+        color: #BB3E32;
+        text-align: center;
+      }
+    }
+    
+  }
+  
+}

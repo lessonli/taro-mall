@@ -1,0 +1,615 @@
+.im-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background: #EDEDED;
+  flex-direction: column;
+}
+
+.im-scrollview {
+  flex-grow: 1;
+  overflow: auto;
+  // height: 100vh;
+  // background: #EDEDED;
+
+  .im-message-loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: $gray, $alpha: 1);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-img {
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: auto;
+      animation: turn 1s linear infinite;
+    }
+
+    &-tips {
+      font-size: 28px;
+      margin-top: 24px;
+    }
+  }
+
+  .actived {
+    margin-bottom: 334px;
+  }
+
+  .emojiActived {
+    margin-bottom: 384px;
+  }
+}
+
+.ml14 {
+  margin-left: 14px;
+}
+
+.message-chat {
+  padding: 32px;
+  // padding-bottom: 110px;
+  margin-bottom: 78px;
+  touch-action: pan-y;
+  background: #EDEDED;
+
+
+  &-head {
+    height: 88px;
+    width: 100%;
+    background: $white;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    text-align: center;
+    line-height: 88px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+  }
+
+  &-list {
+    width: 100%;
+
+    &-time {
+      font-size: 24px;
+      color: #999999;
+      width: 100%;
+      text-align: center;
+      margin: 24px 0;
+    }
+  }
+
+  &-adverse,
+  &-own {
+    margin-bottom: 32px;
+    width: 100%;
+    position: relative;
+
+
+    &-video {
+      width: 280px;
+      height: 280px;
+      position: relative;
+      display: inline-block;
+      margin-left: 16px;
+      border-radius: 8px;
+    }
+
+    &-audio {
+      position: relative;
+      width: 300px;
+      height: 80px;
+      background: #ffffff;
+      border-radius: 8px; //外部矩形给圆角
+      display: flex; //布局选用flex布局
+      align-items: center; //内部元素垂直居中
+      display: inline-block;
+      margin-left: 32px;
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+          /*初始状态 透明度为0 */
+        }
+
+        100% {
+          opacity: 1;
+          /*结尾状态 透明度为1 */
+        }
+      }
+
+      .wave {
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        transform: rotate(135deg);
+        margin-left: 20px;
+
+        .wifi-circle {
+          border: 4px solid #000;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+        .first {
+          width: 5px;
+          height: 5px;
+          background: rgb(51, 50, 50);
+          top: 35px;
+          left: 35px;
+        }
+
+        .second {
+          width: 25px;
+          height: 25px;
+          top: 25px;
+          left: 25px;
+          animation: fadeInOut 1s infinite 0.2s;
+        }
+
+        .third {
+          width: 40px;
+          height: 40px;
+          top: 15px;
+          left: 15px;
+          animation: fadeInOut 1s infinite 0.4s;
+        }
+      }
+
+      .static {
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        transform: rotate(135deg);
+        margin-left: 20px;
+
+        .wifi-circle {
+          border: 4px solid #000;
+          border-radius: 50%;
+          position: absolute;
+        }
+
+        .first {
+          width: 5px;
+          height: 5px;
+          background: rgb(51, 50, 50);
+          top: 35px;
+          left: 35px;
+        }
+
+        .second {
+          width: 25px;
+          height: 25px;
+          top: 25px;
+          left: 25px;
+        }
+
+        .third {
+          width: 40px;
+          height: 40px;
+          top: 15px;
+          left: 15px;
+        }
+      }
+
+      .arrow {
+        position: relative; //相对定位
+        background: #fff; //背景色与外部的圆角矩形背景色一致
+        width: 20px; //定义合适的宽高
+        height: 20px;
+        left: -5px; //调整出舒适的对接位置
+        top: 50%;
+        font-size: 0;
+        // border-bottom: #ccc solid 1px; //因为三角形的border只需要展示出两条边
+        // border-left: #ccc solid 1px;
+        box-sizing: border-box; //将盒子设置为border-box这样不会因为加了border而变宽
+        transform: rotate(45deg) translate(-50%, 0%);
+      }
+
+    }
+
+    &-card {
+      width: 478px;
+      // height: 148px;
+      background: $white;
+      border-radius: 8px;
+      padding: 24px;
+      margin-right: 24px;
+      display: inline-block;
+      box-sizing: border-box;
+
+      &-title {
+        font-size: 32px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 45px;
+        text-align: left;
+        margin-bottom: 16px;
+      }
+
+      &-box {
+        width: 430px;
+        height: 104px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: #F7F7F7;
+
+        // justify-content: center;
+        &-img {
+          width: 104px;
+          height: 104px;
+          border-radius: 8px 0px 0px 8px;
+          display: block;
+        }
+
+        &-des {
+          width: 326px;
+          display: inline-block;
+          height: 104px;
+          border-radius: 0px 8px 8px 0px;
+
+
+          &-name {
+            width: 308px;
+            margin-left: 12px;
+            line-height: 40px;
+            margin-top: 8px;
+            color: #666666;
+            font-size: 28px;
+            text-align: left;
+            @include line-clamp(1)
+          }
+
+          &-price {
+            margin-top: 16px;
+            font-size: 24px;
+            color: #AA1612;
+            line-height: 33px;
+            text-align: left;
+            margin-left: 12px;
+          }
+        }
+      }
+
+      &-orderNo {
+        font-size: 24px;
+        color: #999999;
+        line-height: 33px;
+        margin-top: 19px;
+        text-align: left;
+      }
+    }
+
+    &-head {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &-content {
+      max-width: 478px;
+      box-sizing: border-box;
+      display: inline-block;
+      margin-left: 16px;
+      padding: 24px;
+      background: $white;
+      font-size: 32px;
+      color: #333333;
+      vertical-align: top;
+      border-radius: 8px;
+      white-space: pre-line;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      user-select: text
+    }
+
+    &-image {
+      width: 280px;
+      // height: auto;
+      // max-height: 280px;
+      display: inline-block;
+      margin-left: 16px;
+      border-radius: 8px;
+    }
+
+    &-imageH {
+      height: 280px;
+      // width: auto;
+      // max-height: 280px;
+      margin-left: 16px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+  }
+
+  &-own {
+    text-align: right;
+
+    &-contentBox {
+      position: relative;
+      display: inline-block;
+
+      &-loading {
+        // display: inline-block;
+        position: absolute;
+        width: 20px;
+        left: -20px;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        &-img {
+          width: 20px;
+          height: 20px;
+          display: block;
+          animation: turn 1s linear infinite;
+        }
+      }
+    }
+
+    &-content {
+      max-width: 478px;
+      box-sizing: border-box;
+      display: inline-block;
+      margin-right: 16px;
+      padding: 24px;
+      background: #95EC69;
+      font-size: 32px;
+      color: #333333;
+      vertical-align: top;
+      border-radius: 8px;
+      text-align: left;
+      white-space: pre-line;
+      display: inline-flex;
+      flex-wrap: wrap;
+      align-items: center;
+      user-select: text
+    }
+
+    &-image {
+      width: 280px;
+      // height: auto !important;
+      // max-height: 280px;
+      margin-right: 16px;
+      border-radius: 8px;
+    }
+
+    &-imageH {
+      height: 280px;
+      // width: auto !important;
+      // max-height: 280px;
+      margin-right: 16px;
+      border-radius: 8px;
+    }
+  }
+
+  &-bottom {
+    z-index: 2;
+
+    // min-height: 111px;
+    &-content,
+    &-emojiContent {
+      min-height: 265px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 12px;
+
+      &-box {
+        margin-top: 30px;
+        border-radius: 8px;
+        margin-right: 48px;
+        position: relative;
+
+        .image-input {
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          width: 128px;
+          height: 128px;
+          z-index: 2;
+        }
+
+        &-icon {
+          width: 128px;
+          height: 128px;
+          background: $white;
+          display: flex;
+
+          &-img {
+            width: 56px;
+            height: 56px;
+            display: block;
+            margin: auto;
+          }
+        }
+
+        &-name {
+          text-align: center;
+          font-size: 24px;
+          color: #666666;
+          line-height: 40px;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    &-emojiContent {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding-left: 0;
+      max-height: 285px;
+      overflow-y: scroll;
+
+      &-embox {
+        width: 14%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .emoji {
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        background: url('https://tsla.bowuyoudao.com/weapp/img/css_sprites-1.png') no-repeat;
+      }
+    }
+
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    background: #F6F6F6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    &-inputBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // width: 100%;
+      min-height: 111px;
+      position: relative;
+    }
+
+    &-operation {
+      display: flex;
+      justify-content: flex-start;
+
+      &-img {
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        margin-left: 24px;
+      }
+
+      .send {
+        width: 104px;
+        background: #5AB929;
+        border-radius: 8px;
+        font-size: 32px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        text-align: center;
+        line-height: 56px;
+        color: #FFFFFF;
+        margin-left: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // margin-left: 24px;
+      }
+    }
+
+    // &-input {
+
+    //   width: 69%;
+    //   margin: 15px 0;
+    //   min-height: 80px;
+    //   // display: flex;
+    //   // align-items: center;
+    //   text-align: left !important;
+    //   background: #FFFFFF;
+    //   border-radius: 8px;
+    //   padding: 15px 24px 15px 24px;
+    //   // height: 80px;
+    //   // height: auto !important;
+    //   box-sizing: border-box;
+    //   overflow: visible;
+    //   background: none !important;
+    //   font-size: 32px;
+    //   color: #333333;
+    //   line-height: 50px;
+    //   resize: none;
+    //   border: none;
+    //   background: $white !important;
+    //   // padding-top: 60px;
+    //   height: 80px;
+    //   // justify-content: center;
+    //   transition: all 0.2s linear;
+
+    //   .taro-textarea {
+
+    //     // min-height: 45px;
+    //   }
+    &-showBox {
+      width: 69%;
+      margin: 15px 0;
+      padding: 15px 45px 25px 45px;
+      box-sizing: border-box;
+      min-height: 80px;
+      // line-height: 80px;
+      // background: $white;
+    }
+
+    &-input {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 69%;
+
+      min-height: 80px;
+      // display: flex;
+      // align-items: center;
+      text-align: left !important;
+      background: #FFFFFF;
+      border-radius: 8px;
+      padding: 15px 24px 15px 24px;
+      // height: 80px;
+      // height: auto !important;
+      box-sizing: border-box;
+      overflow: visible;
+      background: none !important;
+      font-size: 32px;
+      color: #333333;
+      line-height: 50px;
+      resize: none;
+      border: none;
+      background: $white !important;
+      // padding-top: 60px;
+      height: calc(100% - 30px) !important;
+      // justify-content: center;
+      transition: all 0.2s linear;
+      margin-top: 15px;
+      margin-left: 15px;
+
+      .taro-textarea {
+
+        // min-height: 45px;
+      }
+
+      // textarea {
+      //   resize: none;
+      //   border: none;
+      // }
+    }
+
+  }
+}
+
+.emojiImg {
+  width: 56px;
+  height: 56px;
+  display: inline-block;
+  background: url('https://tsla.bowuyoudao.com/weapp/img/css_sprites-1.png') no-repeat;
+  // background-size: 56px !important;
+  // border: none !important;
+}

@@ -1,0 +1,85 @@
+.selectGoodsMerchantItem {
+  width: 702px;
+  height: 272px;
+  box-sizing: border-box;
+  display: flex;
+
+  padding: 16px 16px;
+  margin-top: 24px;
+  background: #fff;
+  &-left {
+    &-img {
+      width: 240px;
+      height: 240px;
+      border-radius: 8px;
+    }
+  }
+  &-right {
+    position: relative;
+    margin-left: 16px;
+    width: 100%;
+    &-name {
+      font-weight: 500;
+      color: #333333;
+      font-size: 32px;
+      line-height: 45px;
+      @include line-clamp(2);
+    }
+    &-tag {
+      // color: #bd883e;
+      // font-size: 26px;
+      display: inline-block;
+      font-size: 24px;
+      padding: 4px 8px;
+      background: #ffefea;
+      border-radius: 8px;
+      color: #aa1612;
+    }
+    &-price {
+      // display: flex;
+      &-info {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+       
+        &-price {
+          &-icon {
+            font-size: 24px;
+            color: #aa1612;
+            font-weight: 500;
+          }
+          &-num {
+            font-size: 40px;
+            font-weight: 500;
+            color: #aa1612;
+          }
+        }
+        &-share {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 16px;
+          box-sizing: border-box;
+          width: 279px;
+          height: 60px;
+          background: url("https://tsla.bowuyoudao.com/weapp/img/selectGoosMerchantBtnBg.png");
+          background-size: 279px 60px;
+          background-repeat: no-repeat;
+          &-money {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+          }
+          &-text {
+            font-size: 28px;
+            color: #AA1612;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

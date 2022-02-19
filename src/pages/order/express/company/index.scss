@@ -1,0 +1,35 @@
+.chooseExpressPage {
+  background-color: $white;
+  text-align: left;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    font-size: 30px;
+    border-radius: 8px;
+
+    .myIcon {
+      font-size: 27px;
+      margin-right: 8px;
+    }
+
+    .weui-input {
+      height: 64px;
+      line-height: 64px;
+      // background: #f7f7f7;
+      display: block;
+      width: 100%;
+      border: none;
+      text-indent: 0;
+      box-sizing: border-box;
+      // padding-left: 60px;
+      // font-size: 26px;
+    }
+  }
+
+  &-ScrollView {
+    height: calc(100% - 100px);
+    // background-color: red;
+  }
+}

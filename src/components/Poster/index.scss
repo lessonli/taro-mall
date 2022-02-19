@@ -1,0 +1,247 @@
+.CanvasPhoto {
+  @include fixed;
+  z-index: 4999;
+  visibility: hidden;
+
+  canvas {
+    // background: #fff;
+
+  }
+
+  .hide {
+    opacity: 0;
+  }
+
+  .shareDemo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 1.0);
+    z-index: 2000;
+    display: flex;
+    // animation: bounceInUp 0.4s ease;
+
+    .p1 {
+      position: absolute;
+      top: 10px;
+      right: 48px;
+      width: 148px;
+      height: 197px;
+    }
+
+    .p2 {
+      width: 590px;
+      height: 739px;
+      margin: auto;
+    }
+  }
+
+  &-pullNewContetn {
+    width: 100%;
+    height: 715px;
+    position: absolute;
+    left: 0;
+    bottom: 290px !important;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &-content {
+    width: 100%;
+    height: 878px;
+    position: absolute;
+    left: 0;
+    bottom: 356px;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+
+    .box {
+      align-self: flex-end;
+      box-sizing: border-box;
+
+      .h5Poster {
+        width: 100%;
+        height: 100%;
+        animation: bounceInUp 0.4s ease;
+        animation-fill-mode: forwards // visibility: visible;
+      }
+
+      // width: 520px;
+      // height: 878px;
+      margin: auto;
+      // transform: scale(0.5, 0.5); //父元素缩小两倍
+      // zoom: 0.5;
+    }
+
+    .commodityBox1 {
+      align-self: flex-end;
+      box-sizing: border-box;
+
+      .h5Poster {
+        width: 100%;
+        height: 100%;
+        animation: bounceInUp 0.4s ease;
+      }
+
+      // width: 522px;
+      // height: 774px;
+      margin: auto;
+
+    }
+
+    .boxShadow {
+      box-shadow: 0px 2px 16px 0px rgba(160, 160, 160, 0.3);
+    }
+  }
+
+  &-content-weapp {
+    bottom: 300px;
+  }
+
+  &-bottom {
+    height: 449px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: $white;
+
+    &-tips {
+      position: absolute;
+      left: 0;
+      bottom: 300px;
+      width: 100%;
+      text-align: center;
+      color: #999999;
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    &-operation {
+      box-sizing: border-box;
+      padding: 0 50px;
+      margin-top: 156px;
+      height: 196px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &-item {
+        position: relative;
+
+        &-img {
+          width: 100px;
+          height: 100px;
+          background: #F5F5F5;
+          border-radius: 50%;
+          display: flex;
+
+        }
+
+        &-btn {
+          width: 100px;
+          height: 100px;
+          background: #F5F5F5;
+          border-radius: 50%;
+          display: flex;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+        }
+
+        img {
+          display: block;
+          width: 56px;
+          height: 56px;
+          margin: auto;
+        }
+
+        p {
+          height: 37px;
+          line-height: 37px;
+          font-size: 26px;
+          font-weight: 400;
+          color: #666666;
+          margin-top: 12px;
+          text-align: center;
+        }
+      }
+    }
+
+    &-cancel {
+      height: 97px;
+      line-height: 97px;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 400;
+      color: #333333;
+      border-top: 1px solid #eee;
+    }
+  }
+
+  &--active {
+    visibility: visible;
+  }
+
+}
+
+.commodity-canvas {
+
+  background: none;
+  box-sizing: border-box;
+  margin: auto;
+  left: 500%;
+  transform: translate(-50%, 0);
+  position: fixed !important;
+  bottom: 300px;
+}
+
+.openStore-canvas {
+  width: 522px;
+  height: 774px;
+  background: none;
+  box-sizing: border-box;
+  left: 500%;
+  position: fixed !important;
+  bottom: 300px;
+  transform: translate(-50%, 0);
+}
+
+.merchant-canvas {
+  background: none;
+  box-sizing: border-box;
+  margin: auto;
+  left: 500%;
+  position: fixed !important;
+  bottom: 300px;
+  transform: translate(-50%, 0);
+}
+
+.pullNew-canvas {
+  width: 520px;
+  height: 733px;
+  background: none;
+  box-sizing: border-box;
+  margin: auto;
+  left: 500%;
+  position: fixed !important;
+  bottom: 300px;
+  transform: translate(-50%, 0);
+}
+
+@keyframes bounceInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

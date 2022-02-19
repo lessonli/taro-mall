@@ -1,0 +1,107 @@
+
+
+
+.businessDetail-list-item{
+  padding: 32px 24px 24px 24px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  &-content{
+    display: flex;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 20px;
+    &-img{
+      width: 80px;
+      height: 80px;
+      margin-right: 16px;
+      &-imgEle{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    &-info{
+      &-name{
+        color: #333333;
+        font-size: 32px;
+      }
+      &-date{
+        color: #999999;
+        font-size: 24px;
+      }
+    }
+  }
+  &-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    font-size: 24px;
+    &-item{
+      flex: 1;
+      text-align: center;
+      &-number{
+        font-size: 36px;
+        color: #333333;
+      }
+    }
+  }
+}
+
+.businessDetail-list-item-goodsInfo{
+  background: #FFFFFF;
+  border-bottom: 1px solid #eee;
+  padding: 24px 32px;
+  display: flex;
+  height: 252px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  // 图片稍后处理
+  &-imgWrapper{
+    &-img{
+      width: 180px;
+      height: 180px;
+      &-imgEle{
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+  &-detail{
+    &-title{
+      color: #666666;
+      font-size: 28px;
+      @include line-clamp(1)
+    }
+    &-date{
+      color: #999999;
+      font-size: 24px;
+    }
+    &-moneyInfo{
+      display: flex;
+      margin-top: 63px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+     &-money{
+       &-price{
+         color: #333333;
+       }
+       &-profit{
+         color:#AA1612;
+       }
+     }
+    }
+  }
+
+}
+
+.businessDetail-income-tit{
+  margin-top: 24px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #EEEEEE;
+  line-height: 85px;
+  color: #333333;
+  padding: 0 32px;
+
+}

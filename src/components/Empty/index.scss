@@ -1,0 +1,13 @@
+.empty-component {
+  text-align: center;
+
+  .empty-img {
+    width: 260px;
+    height: 260px;
+  }
+  .empty-text {
+    font-size: 28px;
+    margin-top: 24px;
+    color: $tabColor;
+  }
+}

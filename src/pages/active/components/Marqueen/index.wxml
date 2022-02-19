@@ -1,0 +1,8 @@
+<view class="example">
+      <view class="marquee_box">
+        <view class="marquee_text" style="{{orientation}}:{{marqueeDistance}}px;font-size: {{size}}px;">
+          <image src="{{adUrl}}" class='ad-image' />{{text}}
+        </view>
+      </view>
+    </view>
+

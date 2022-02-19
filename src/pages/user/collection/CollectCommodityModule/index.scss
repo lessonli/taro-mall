@@ -1,0 +1,244 @@
+.commodityBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 24px;
+  box-sizing: border-box;
+  // min-height: calc(100vh - 700px);
+
+  &-left {
+    width: 343px;
+  }
+
+  &-right {
+    width: 343px;
+  }
+
+  &-empty {
+    margin: auto;
+  }
+}
+
+
+.commodity {
+  width: 343px;
+  // min-height: 537px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  &-swiper {
+    width: 343px;
+    height: 500px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+
+  &-placeholder {
+
+    background: $white;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      display: block;
+    }
+
+    &-box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .img {
+        width: 240px;
+        height: 108px;
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .op0 {
+      opacity: 0;
+    }
+  }
+
+  img {
+    width: 343px;
+    // height: 347px;
+    max-height: 500px;
+    display: block;
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  &-info {
+    // height: 190px;
+    padding: 12px 16px 16px 16px;
+    position: relative;
+    box-sizing: border-box;
+
+    &-tags {
+      height: 28px;
+      margin-bottom: 8px;
+
+      &-account {
+        box-sizing: border-box;
+        // height: 28px;
+        font-size: 20px;
+        font-weight: 400;
+        color: #AA1612;
+        line-height: 28px;
+        padding: 0 8px;
+        text-align: center;
+        background: rgba(170, 22, 18, 0.08);
+        border-radius: 4px;
+        float: left;
+        margin-right: 8px;
+        border: 1px solid rgba(170, 22, 18, 0.08);
+      }
+
+      &-postage {
+        box-sizing: border-box;
+        font-size: 20px;
+        // height: 28px;
+        font-weight: 400;
+        color: #C19529;
+        line-height: 28px;
+        text-align: center;
+        padding: 0 8px;
+        background: #fff;
+        border-radius: 4px;
+        float: left;
+        margin-right: 8px;
+        border: 1px solid #E6C26A;
+      }
+    }
+
+    &-des {
+      font-weight: 600;
+      height: 40px;
+      color: rgba(0, 0, 0, 0.85);
+      line-height: 40px;
+      font-size: 28px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #AA1612;
+      margin-top: 8px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+
+      &-danwei {
+        font-size: 24px;
+        display: inline-block;
+        margin-right: 6px;
+      }
+
+      &-num {
+        font-size: 36px;
+        font-weight: bold;
+        color: #AA1612;
+        line-height: 42px;
+        height: 42px;
+        display: inline-block;
+        margin-left: 4px;
+      }
+
+      &-original {
+        font-size: 24px;
+        font-weight: bold;
+        color: #BDBDBD;
+        margin-left: 16px;
+        line-height: 28px;
+        height: 28px;
+        text-decoration: line-through;
+        display: inline-block;
+        margin-top: 11px;
+      }
+
+      img {
+        border-radius: 4px 0px 0px 4px;
+        width: 38px;
+        height: 32px;
+        float: left;
+      }
+
+      .numBox {
+        position: absolute;
+        right: 16px;
+        height: 33px;
+        line-height: 33px;
+        bottom: 22px;
+
+        &-tips {
+          color: #999999;
+          font-size: 24px;
+          font-weight: 400;
+          display: inline-flex;
+          line-height: 42px;
+          height: 42px;
+        }
+
+        &-times {
+          margin: 0 5px;
+          color: $checked;
+          font-weight: 400;
+        }
+      }
+
+      .earnBox {
+        position: absolute;
+        left: 16px;
+        height: 32px;
+        line-height: 32px;
+        top: -48px;
+
+        img {
+          border-radius: 4px 0px 0px 4px;
+          width: 38px;
+          height: 32px;
+          float: left;
+        }
+
+        &-tips {
+          color: #999999;
+          font-size: 24px;
+          font-weight: 400;
+          display: inline-flex;
+          line-height: 42px;
+          height: 42px;
+        }
+
+        &-times {
+          margin: 0 5px;
+          color: $checked;
+          font-weight: 400;
+        }
+      }
+
+      &-earn {
+        box-sizing: border-box;
+        font-size: 20px;
+        line-height: 32px;
+        height: 32px;
+        padding: 1px 8px;
+        font-weight: 500;
+        color: #9C6538;
+        background: #FEEFDE;
+        float: left;
+      }
+    }
+  }
+}

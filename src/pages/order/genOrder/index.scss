@@ -1,0 +1,44 @@
+.genOrderPage {
+  padding-bottom: 150px;
+
+  &-pays {
+    margin-top: 24px;
+    padding: 32px;
+    background-color: $white;
+    padding-bottom: 0;
+    margin-bottom: 120px;
+
+    &--header {
+      color: $color999;
+      font-size: $fz28;
+    }
+  }
+
+  &--footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 24px;
+
+    &-text {
+      color: $tabColor;
+      font-size: $fz24;
+
+      // display: flex;
+      // align-items: stretch;
+      &-2 {
+        font-size: $fz32;
+        margin-top: -2px;
+        font-weight: 500;
+      }
+    }
+
+
+  }
+}

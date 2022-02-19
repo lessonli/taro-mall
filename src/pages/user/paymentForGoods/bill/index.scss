@@ -1,0 +1,39 @@
+
+.bill{
+  &-list{
+    margin-top: 24px;
+    &-left{
+      box-sizing: border-box;
+      padding: 30px;
+      height: 140px;
+      &-tit{
+        min-width: 300px;
+        display: inline-block;
+        @include line-clamp(1);
+        color: #333333;
+        font-size: 32px;
+      }
+      &-date{
+        color: #999999;
+        font-size: 24px;
+      }
+    }
+    &-right{
+      font-size: 32px;
+      color: #333333;
+      text-align: center;
+    }
+    &-income{
+      // color: #AA1612;
+    }
+    &-out{
+      // color: #AA1612;
+      // color: #333333;
+    }
+
+  }
+}
+
+.bill-scrollView{
+  height: calc(100vh - 86px);
+}

@@ -1,0 +1,151 @@
+.newUserShare {
+  &-hotSale {
+    width: 100%;
+    min-height: 700px;
+    box-sizing: border-box;
+    padding: 0 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    background-image: url("https://tsla.bowuyoudao.com/weapp/img/hotSaleBg2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &-img {
+      width: 378px;
+      height: 60px;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      :nth-of-type(2),
+      :nth-of-type(5) {
+        margin-left: 9px;
+        margin-right: 9px;
+      }
+      :nth-of-type(4),
+      :nth-of-type(5),
+      :nth-of-type(6) {
+        margin-top: 9px;
+      }
+
+    }
+  }
+  // &-scrollx {
+  //   // height: 110px;
+    
+  // }
+  &-tabsWrapper {
+    width: 100%;
+    height: 110px;
+    background-color: #FAF8FB;
+  }
+  &-tabs {
+    // padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    // height: 110px;
+    border-radius: 8px;
+    font-size: 32px;
+    color:#999999;
+    font-weight: 400;
+    white-space:nowrap;
+    cursor: pointer;
+    background-color: #FAF8FB;
+    &-item {
+      display: inline-block;
+      width: 160px;
+      padding: 0 8px;
+      // padding-left: 24px;
+      text-align: center;
+      box-sizing: border-box;
+
+     
+    }
+    &-itemActive{
+      position: relative;
+      display: inline-block;
+      width: 180px;
+      line-height: 110px;
+      // padding-left: 24px;
+      font-size: 32px;
+      font-weight: 500;
+      text-align: center;
+      box-sizing: border-box;
+      white-space:nowrap;
+      color: #AA1612;
+      &::after{
+        position: absolute;
+        content: '';
+        bottom: 20px;
+        left: 60px;
+        width: 45px;
+        height: 6px;
+        background-color: #AA1612;
+        transition: 0.25s ease-out;
+        transform: translateX(0%);
+      }
+    }
+   
+  }
+  &-goodsList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 24px;
+    &-status{
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 30px;
+
+    }
+  }
+  // .LoadingView {
+  //   position: absolute;
+  //   top: 20px;
+  //   width: 200px;
+  //   height: 200px;
+  //   background-color: red;
+  // }
+}
+.newUserShare-scroll-x {
+    height: 110px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+      color: transparent;
+    }
+    
+  
+}
+
+.newUserShare-scrolly{
+  height: 100vh;
+}
+
+.poster-share {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+  width: 88px;
+  height: 88px;
+  position: fixed;
+  right: 24px;
+  bottom: 191px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  &-img {
+    width: 50px;
+    height: 50px;
+  }
+}
+.newUserSharHasCon{
+  height:calc( 100vh + 405px)
+}

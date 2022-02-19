@@ -1,0 +1,53 @@
+.ListItemDefault,
+.ListItem {
+  display: flex;
+  align-items: center;
+  background: $white;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  padding: 0 24px;
+
+  // height: 109px;sd
+  &-child {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-left {
+      @include title();
+      // background-color: red;
+      // min-width: 200px;
+    }
+
+    &-right {
+      @include tips();
+      padding-right: 16px;
+      display: flex;
+      align-items: center;
+      max-width: 450px;
+    }
+  }
+
+  &-icon-right {
+    color: #bdbdbd;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 26px;
+    }
+  }
+
+}
+
+.ListItem {
+  height: 109px;
+
+  &-right {
+    @include tips();
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+  }
+}

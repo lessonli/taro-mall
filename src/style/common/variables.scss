@@ -1,0 +1,134 @@
+$gray: #F7F7F7; // 背景灰色
+$fontColor: #333333; // 字体颜色
+$checked: #AA1612; // 选择颜色
+$tabColor: #666666; // tab选择颜色
+$white: #fff;
+$color999: #999999;
+$colorEEE: #EEEEEE;
+$bgColorBd: #BDBDBD;
+$fz12: 12px;
+$fz14: 14px;
+$fz16: 16px;
+$fz18: 18px;
+$fz20: 20px;
+$fz22: 22px;
+$fz24: 24px;
+$fz26: 26px;
+$fz28: 28px;
+$fz30: 30px;
+$fz32: 32px;
+$fz36: 36px;
+
+
+$color-primary: #AA1612; // 主题色
+$color-primary-disabled:rgba(170, 22, 18, 0.3);
+
+$border-color: rgba(0, 0, 0, 0.15); // 边框色
+
+$color-placeholder: #BDBDBD;
+
+$bg-color-1: rgba(0, 0, 0, 0.5);
+$bg-color-1: rgba(0, 0, 0, 0.02);
+
+$font-size-large: 36px;
+$font-size-primary: 32px;
+$font-size-small: 24px;
+
+// 层级
+$zindex-popup: 1000;
+$zindex-footer: 500;
+
+
+@mixin label() {
+  height: 36px;
+  background: #f7f7f7;
+  padding: 0 8px;
+  color: #999999;
+
+}
+
+@mixin labelSpan {
+  // vertical-align: top;
+  // float: left;
+  font-size: 24px;
+  line-height: 36px;
+  display: inline-block;
+}
+
+@mixin labelImg {
+  width: 23px;
+  height: 26px;
+  // float: left;
+  // margin-top: 5px
+}
+
+@mixin sl {
+  white-space: nowrap; //不换行
+  overflow: hidden; //超出隐藏
+  text-overflow: ellipsis; //变成...
+}
+
+@mixin primary {
+  width: 315px;
+  height: 80px;
+  border-radius: 8px;
+  border: 1px solid #BDBDBD;
+  font-size: $fz32;
+  color: #333333;
+  line-height: 80px;
+  text-align: center;
+}
+
+@mixin active {
+  width: 315px;
+  height: 80px;
+  background: $checked;
+  border-radius: 8px;
+  font-size: 32px;
+  color: $white;
+  line-height: 80px;
+  text-align: center;
+}
+
+@mixin title {
+  font-size: $fz32;
+  color: $fontColor;
+}
+
+@mixin tips {
+  font-size: $fz32;
+  color: $color999;
+}
+
+@mixin fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba($color: #000000, $alpha: .5);
+}
+
+@mixin line-clamp($n) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $n;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/**
+单行文本溢出隐藏 兼容写法，要求元素定宽
+*/
+@mixin line-clamp-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

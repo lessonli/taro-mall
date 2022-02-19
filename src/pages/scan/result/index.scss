@@ -1,0 +1,26 @@
+
+.scan-result{
+  padding: 24px;
+  &-img{
+    margin: 0 auto;
+    &-ele{
+      display: block;
+      width: 246px;
+      height: 246px;
+      border-radius: 5px;
+      margin: 0 auto;
+      margin-top: 200px;
+    }
+  }
+  &-text{
+    font-size: 48px;
+    color: #999;
+    text-align: center;
+    margin-top: 32px;
+    &-icon{
+      font-size: 40px;
+      color: #1DAD1A;
+      margin-right: 10px;
+    }
+  }
+}

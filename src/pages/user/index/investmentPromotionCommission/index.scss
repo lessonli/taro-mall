@@ -1,0 +1,67 @@
+
+.investmentPromotionCommission{
+  padding: 24px;
+  box-sizing: border-box;
+  width: 100%;
+  &-overView{
+    background: #FFFFFF;
+    padding: 0 32px;
+    height: 184px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-desc{
+      &-title{
+        color: #999999;
+        font-size: 26px;
+      }
+      &-num{
+        color: #333333;
+        font-size: 48px;
+      }
+    }
+    &-zs{
+      font-size: 28px;
+      color: #999999;
+    }
+  }
+  &-list{
+    margin-top: 24px;
+  
+  }
+}
+
+.investmentPromotionCommission-list-left{
+  display: flex;
+  align-items: center;
+  height: 144px;
+  &-img{
+    margin-right: 16px;
+    &-imgEle{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+}
+.investmentPromotionCommission-list-left-user{
+  &-text{
+    color: #333333;
+    font-size: 32px;
+    @include line-clamp(1)
+  }
+  &-date{
+    font-size: 24px;
+    color: #999999;
+  }
+}
+.investmentPromotionCommission-list-item-right{
+  color: #AA1612;
+  font-size: 32px;
+}
+
+.nvestmentPromotionCommission-scrollView{
+  height: calc(100% - 182px);
+}

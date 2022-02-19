@@ -1,0 +1,79 @@
+
+.publistGoodStep2 {
+  padding: 24px;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+
+  .at-input {
+    padding-right: 0px !important;
+    width: 320px;
+    // width: 320px;
+  }
+
+  .at-icon-help {
+    color: $color999;
+    font-size: $fz32;
+    margin-left: $fz12;
+    vertical-align: middle;
+  }
+  .add-p-inpuut {
+    width: 300px;
+  }
+
+  .express-fees {
+    vertical-align: top;
+    padding: 32px;
+    &--title {
+      margin-bottom: 24px;
+    }
+  }
+
+  &--card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background-color: $white;
+
+    .ListItem:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-footer {
+    &__btns {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      &-item {
+        // width: 45%;
+      }
+    }
+
+    &__text {
+      color: $tabColor;
+      font-size: $fz26;
+      margin-top: $fz24;
+      &-name {
+        color: #3295FA;
+      }
+    }
+  }
+}
+
+.mall-service-items {
+  margin-bottom: 229px;
+  border-bottom: 1px solid $colorEEE;
+  .mall-service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    color: $fontColor;
+    font-size: $fz32;
+  
+    &__desc {
+      color: $tabColor;
+    }
+  
+  }
+}

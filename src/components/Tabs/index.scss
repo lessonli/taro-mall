@@ -1,0 +1,43 @@
+.bw-tabs-component {
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  height: 88px;
+  line-height: 88px;
+
+  &-item {
+
+    text-align: center;
+    color: #333333;
+    font-size: $fz32;
+
+    &-label {
+      display: inline-block;
+      position: relative;
+    }
+
+    &__active {
+      font-weight: 500;
+
+      .bw-tabs-component-item-label::after {
+        content: ' ';
+        width: 60%;
+        height: 6px;
+        background-color: $color-primary;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &-item__1 {
+    flex: 1;
+  }
+
+  // &-item__2 {
+  //   margin: 0 40px;
+  // }
+}

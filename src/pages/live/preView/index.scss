@@ -1,0 +1,84 @@
+.live-preView {
+
+  &-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+  }
+
+  &-tips {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 324px;
+    z-index: 7;
+  }
+
+  &-roomName {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    color: #C8A881;
+    line-height: 50px;
+  }
+
+  &-rock {
+    width: 154px;
+    height: 56px;
+    background: #C8A881;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 33px;
+
+    &-icon {
+      font-size: 26px;
+      color: $white;
+    }
+
+    &-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-left: 8px;
+    }
+  }
+
+  &-rocked {
+    width: 154px;
+    height: 56px;
+    background: #707070;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 33px;
+
+    &-icon {
+      font-size: 26px;
+      color: $white;
+    }
+
+    &-text {
+      font-size: 24px;
+      color: #FFFFFF;
+      margin-left: 8px;
+    }
+  }
+}
+
+.preView2live {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+}

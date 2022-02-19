@@ -1,0 +1,79 @@
+.login {
+
+  &-logo {
+    width: 401px;
+    height: 240px;
+    margin: auto;
+    display: block;
+    margin-top: 200px;
+  }
+
+  &-btn {
+    width: 630px;
+    height: 98px;
+    background: $checked;
+    border-radius: 8px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 98px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: auto;
+    margin-top: 290px;
+  }
+
+  &-phone {
+    width: 630px;
+    height: 98px;
+    background: $checked;
+    border-radius: 8px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 98px;
+    font-weight: 400;
+    color: #333;
+    margin: auto;
+    margin-top: 290px;
+    position: relative;
+    color: #fff;
+
+    &-btn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+    }
+
+  }
+
+  .login-radio {
+    // margin-right: -24px;
+    position: relative;
+    // top: 2px;
+  }
+}
+
+.bw-login-xieyi {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  padding: 0 32px;
+  position: absolute;
+  bottom: 50px;
+
+  .bw-RadioGroup {
+    display: flex;
+    align-items: center;
+  }
+
+  .bw-xieyi-left {
+    display: inline-block;
+    margin-left: 14px;
+    align-items: center;
+    margin-top: 2px;
+    vertical-align: middle;
+  }
+}

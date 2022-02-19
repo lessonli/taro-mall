@@ -1,0 +1,56 @@
+.authButtonBox{
+  // position: relative;
+  .at-curtain__btn-close{
+    display: none;
+  }
+  .at-curtain{
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .bw-popup__container{
+    width: 574px;
+    // margin-left: 88px;
+  }
+  &-box{
+    height: 357px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+    &-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      color: #333333;
+      font-size: 36px;
+      margin-top: 56px;
+    }
+    &-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+      color: #666666;
+      font-size: 28px;
+    }
+    &-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 48px;
+      width: 368px;
+      height: 80px;
+      background-color: #24AE67;
+      color: #fff;
+      border: none;
+    }
+    &-close{
+      position: absolute;
+      top:20px;
+      right: 28px;
+      font-size: 48px;
+      color: #999;
+    }
+  }
+}

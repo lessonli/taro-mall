@@ -1,0 +1,89 @@
+.LiveIcon-icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &-yuzhan {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    z-index: 2;
+    // width: 92px;
+    // height: 34px;
+    // background: #BE996B;
+    border-radius: 6px;
+    line-height: 34px;
+    display: flex;
+
+    &-img {
+      width: 92px;
+      height: 34px;
+    }
+    &-see {
+      background: rgba(0, 0, 0, 0.5) !important;
+      padding: 0 8px;
+      line-height: 34px;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+
+  &-live {
+    padding: 0 6px;
+    background: #aa1612;
+    border-radius: 4px;
+    color: #ffffff;
+    line-height: 34px;
+    height: 34px;
+    font-size: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    .line {
+      display: inline-block;
+      width: 4px;
+      border-radius: 1px;
+      background-color: $white;
+      margin-right: 2px;
+      height: 34px;
+    }
+
+    .line1 {
+      // alternate意为应该轮流反向播放动画
+      animation: line 0.6s infinite ease-in-out alternate;
+    }
+
+    .line2 {
+      animation: line 0.6s 0.2s infinite ease-in-out alternate;
+    }
+
+    .line3 {
+      animation: line 0.6s 0.4s infinite ease-in-out alternate;
+    }
+  }
+
+  &-see {
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 34px;
+    font-size: 20px;
+    color: $white;
+  }
+}
+
+@keyframes line {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 50%;
+  }
+}

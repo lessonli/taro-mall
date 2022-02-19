@@ -1,0 +1,66 @@
+
+.bw-focus{
+  &-item{
+    background-color: #fff;
+    margin-top: 24px;
+    @include flexCenter();
+    padding: 32px;
+    &-content{
+      line-height: 1;
+      @include flexCenter();
+      &-img{
+        margin-right: 16px;
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        vertical-align: middle
+      }
+      &-tit{
+        &-text{
+          max-width: 450px;
+          @include line-clamp(1);
+          font-size: 32px;
+          color: #333333;
+          
+        }
+        &-approve{
+          margin-top: 18px;
+          display: flex;
+          &-item{
+            padding: 1px 8px;
+            color: #999999;
+            font-size: 24px;
+            height: 36px;
+            margin-right: 10px;
+            background: #F7F7F7;
+            border-radius: 4px;
+            &-icon{
+              color: #C8B18C;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    &-focus{
+      width: 121px;
+      height: 60px;
+      border-radius: 8px;
+      border: 1px solid #BDBDBD;
+      color: #333333;
+      text-align: center;
+      font-size: 28px;
+      line-height: 60px;
+    }
+  }
+}
+.bw-focus-scroll-view{
+  height: calc(100vh - 24px);
+}
+
+.bw-focus-item-isfocus{
+  background-color: $color-primary;
+  color: #fff;
+
+}

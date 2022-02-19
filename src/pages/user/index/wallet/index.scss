@@ -1,0 +1,44 @@
+
+.wrapper{
+  padding: 24px 24px 0 24px;
+  .wallet-list{
+    :last-child{
+      border-bottom: none;
+    }
+    overflow: hidden;
+    color: #333333;
+    font-size: 32px;
+    border-radius: 16px;
+  
+    &-title{
+      line-height: 80px;
+      font-size: 28px;
+      color: #999999;
+    }
+    &-item{
+      background: #fff;
+      .wallet-list-leftItem{
+        &-icon{
+          font-size: 40px;
+          vertical-align: top;
+          color: #CC785F;
+          
+          margin-right: 5px;
+        }
+        .store{
+          color: #D9AF75;
+        }
+        .icon-account{
+          color: #787CAB;
+        }
+        line-height: 109px;
+
+      }
+    }
+
+  }
+}
+.wallet-list-one{
+  border-bottom: 1px solid #eeeeee;
+}
+

@@ -1,0 +1,8 @@
+
+
+.bw-tready{
+  .ListItem-child{
+    @include line-clamp(1)
+  }
+ 
+}

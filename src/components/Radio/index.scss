@@ -1,0 +1,36 @@
+.Radio {
+  display: inline-block;
+
+
+  &-noCheck {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &-checked {
+    width: 32px;
+    height: 32px;
+    // border: 1px solid #BDBDBD;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+
+    i {
+      color: #AA1612;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      font-size: 32px;
+      display: block;
+      text-align: center;
+      line-height: 32px;
+      z-index: 2;
+    }
+  }
+}

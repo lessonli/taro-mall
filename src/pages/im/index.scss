@@ -1,0 +1,166 @@
+.message-list {
+  padding-bottom: 120px;
+
+  .am-swipe {
+    overflow: visible !important;
+  }
+
+  &-empty {
+    position: fixed;
+    left: 0;
+    top: 250px;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  &-tabs {
+    padding: 32px 24px 24px 24px;
+    display: flex;
+    justify-content: space-between;
+    background: $white;
+
+
+    &-item {
+      width: 160px;
+      position: relative;
+
+      &-noRead {
+        position: absolute;
+        right: 15px;
+        top: -8px;
+        height: 32px;
+        background: #AA1612;
+        border: 1px solid #FFFFFF;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 500;
+        color: #FFFFFF;
+        line-height: 32px;
+        border-radius: 15px;
+        padding: 0 11px;
+      }
+
+      &-img {
+        height: 102px;
+        width: 102px;
+        margin: auto;
+        display: block;
+      }
+
+      &-text {
+        font-size: 28px;
+        text-align: center;
+        color: #333333;
+        line-height: 28px;
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .at-swipe-action {
+    height: 155px !important;
+    background: #fff;
+    margin-top: 24px;
+  }
+
+  .at-swipe-action__content {
+    background: $gray;
+  }
+
+  .at-swipe-action__option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .am-swipe-btn {
+  //   width: 150px;
+  // }
+
+}
+
+.bw-atList {
+  background: #F7F7F7;
+  // height: 100px;
+}
+
+
+.message-list-item {
+  // margin-top: 24px;
+  width: 100%;
+  height: 155px;
+  margin-bottom: 1px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  background: $white;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+
+  &-imgBox {
+    position: relative;
+    display: flex;
+
+    &-img {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    &-point {
+      position: absolute;
+      padding: 0 15px;
+      background: #f00;
+      border-radius: 50px;
+      color: $white;
+      font-size: 24px;
+      font-weight: 600;
+      right: -10px;
+      top: -10px;
+      z-index: 2;
+    }
+  }
+
+  &-info {
+    margin-left: 16px;
+    min-width: 200px;
+
+    &-name {
+      font-size: 32px;
+      color: #333333;
+      line-height: 45px;
+      height: 45px;
+      max-width: 400px;
+      @include line-clamp(1)
+    }
+
+    &-des {
+      height: 37px;
+      font-size: 26px;
+      color: #999999;
+      line-height: 37px;
+      margin-top: 8px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &-time {
+      font-size: 24px;
+      position: absolute;
+      top: 43px;
+      right: 32px;
+      color: #BDBDBD;
+    }
+  }
+}
+
+.pined {
+  background: #eee !important;
+}

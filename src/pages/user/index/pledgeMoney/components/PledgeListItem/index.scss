@@ -1,0 +1,56 @@
+
+.pledgeListItem-wrapper{
+  margin-bottom: 24px;
+  &-content{
+    display: flex;
+    padding: 24px 32px;
+    // height: 136px;
+    align-items: center;
+    background: #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    &-img{
+      margin-right: 16px;
+      &-imgEle{
+        width: 88px;
+        height: 88px;
+        border-radius: 8px;
+        vertical-align: middle;
+      }
+    }
+    &-title{
+      &-text{
+        color: #666666;
+        font-size: 28px;
+        @include line-clamp(1)
+      }
+      &-date{
+        margin-top: 8px;
+        font-size: 24px;
+        color: #999999;
+      }
+    }
+  }
+  &-type{
+    display: flex;
+    padding: 0 32px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    div:nth-child(1){
+      color: #333333;
+      font-size: 32px;
+      line-height: 93px;
+    }
+  }
+}
+
+.pledgeListItem-offer{
+  font-size: 32px;
+  color: #C19529;
+}
+.pledgeListItem-finish{
+  color: #999999;
+}
+.pledgeListItem-unconventional{
+  color: #AA1612;
+}

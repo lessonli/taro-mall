@@ -1,0 +1,7 @@
+[auth]
+token=c7be6f7890324e2c8df0f4616c41f94795003518f51443eaac892dc63548476e
+
+[defaults]
+url=https://sentry.bowuyoudao.com/
+org=sentry_bw
+project=online_h5_weapp

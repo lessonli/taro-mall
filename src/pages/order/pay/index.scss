@@ -1,0 +1,81 @@
+.orderpaypage {
+  &-header {
+    background-color: #fff;
+    padding: 56px 0;
+  }
+
+  &-content {
+    background-color: #fff;
+    padding: 0 32px;
+    margin-top: 24px;
+  }
+
+  &-footer {
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+
+  }
+
+  &-radios {
+
+  }
+
+  &-radio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+
+    border-bottom: 1px solid #F7F7F7;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+
+    &-label {
+      flex: 1;
+    }
+
+    &__label {
+      display: flex;
+      align-items: center;
+    }
+
+
+    &-icon {
+      width: 49px;
+      height: 49px;
+    }
+  }
+
+  .zhzf {
+    color: #BD883E;
+  }
+
+  .orderpaypagecombinepay {
+    .at-button {
+      
+    }
+
+    &-desc {
+      color: #999999;
+      font-size: 28px;
+      padding: 24px 32px;
+      background-color: #F7F7F7;
+    }
+
+    .orderpaypage-radio-item {
+      padding: 30px 32px;
+      &:first-child {
+        border-bottom: 0px;
+      }
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.bw-attention {
+  width: 121px;
+  background: #AA1612;
+  border-radius: 8px;
+  line-height: 60px;
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-left: 17px;
+
+  &--done {
+    background: none;
+    border: 1px solid #979797;
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFFFFF;
+  }
+
+  &--color {
+    color: #333;
+  }
+}

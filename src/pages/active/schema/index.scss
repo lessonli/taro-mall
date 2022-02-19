@@ -1,0 +1,39 @@
+.schemapage {
+  text-align: center;
+  &-bwicon {
+    width: 180px;
+    height: 180px;
+
+  }
+
+  &-footer {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+
+    &-btn {
+      background-color: #07c160;
+      color: #fff;
+      border: none;
+    }
+
+    &-text {
+      text-align: left;
+      margin-top: 24px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-copy {
+      color: rgb(108, 125, 162);
+    }
+  }
+
+  &-xcx {
+    position: relative;
+    top: -10px;
+  }
+
+}

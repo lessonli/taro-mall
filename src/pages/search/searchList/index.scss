@@ -1,0 +1,31 @@
+.bw-searchList {
+  &-empty {
+    height: calc(100vh - 500px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-content {
+    background: $gray;
+    margin-top: 24px;
+  }
+}
+
+.searchListBox {
+  height: 100vh;
+
+  &-box {
+    padding: 0 32px;
+  }
+
+  &-tabs {
+    margin-right: 72px;
+  }
+
+  &-sortBox {
+    background: $white;
+    height: 46px;
+    padding-bottom: 13px;
+  }
+}

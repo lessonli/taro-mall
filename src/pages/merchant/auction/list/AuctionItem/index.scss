@@ -1,0 +1,133 @@
+.AuctionItem-component {
+  background-color: #fff;
+  margin-top: 24px;
+
+  .title {
+    box-sizing: border-box;
+    padding: 24px 32px;
+    font-size: $fz28;
+    color: $color999;
+    border-bottom: 1px solid #eee;
+    height: 80px;
+
+    .title-status {
+      color: #C19529;
+    }
+  }
+
+  .detail {
+    padding: 24px 32px;
+    border-bottom: 1px solid #eee;
+    .good-icon {
+      width: 180px;
+      height: 180px;
+      margin-right: 16px;
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+
+      &-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &-status {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        line-height: 30px;
+        
+        background: #000000;
+        opacity: 0.6;
+        color: $white;
+        text-align: center;
+        // display: flex;
+        // align-items: center;
+        // transform: scale(0.5);
+        &-text {
+          font-size: 40px;
+          display: inline-block;
+          transform: scale(0.5);
+          vertical-align: top;
+        }
+
+      }
+    }
+    .detail-text {
+      flex: 1;
+      overflow: hidden;
+      .name {
+        font-size: 30px;
+        color: #333333;
+        font-weight: 500;
+        @include sl;
+        // margin-bottom: 12px;
+      }
+      .prices {
+        font-size: $fz24;
+        color: $color999;
+        margin-bottom: 48px;
+        .price {
+          margin-right: 24px;
+      
+        }
+      }
+      .get-price {
+        font-size: $fz24;
+        color: $color999;
+        display: flex;
+        align-items: flex-end;
+        .color-primary {
+          // margin-left: 8px;
+          // margin-right: 8px;
+        }
+        .price {
+          color: $color-primary;
+          font-size: $fz32;
+          position: relative;
+          top: 2px;
+        }
+
+        &__earn {
+          transform: scale(0.5) translateY(20%);
+          margin-left: -26px;
+          display: inline-flex;
+          align-items: center;
+          position: relative;
+
+          &-img {
+            width: 67px;
+            height: 64px;
+          }
+          &-text {
+            width: 132px;
+            height: 64px;
+            text-align: center;
+            background: #FEEFDE;
+            border-radius: 4px 0px 0px 4px;
+            color: #9C6538;
+            font-size: 40px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: flex-end;
+
+    .bw-btn {
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
